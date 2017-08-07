@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, tangzx(love.tangzx@qq.com)
+# This file is distributed under the same license as the EmmyLua for IntelliJ IDEA package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-07 16:31+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../run.rst:2
+msgid "运行与调试"
+msgstr ""
+
+#: ../run.rst:5
+msgid "1. 准备"
+msgstr ""
+
+#: ../run.rst:9
+msgid "必须将源码的根目录设置为 ``Sources`` 目录。"
+msgstr ""
+
+#: ../run.rst:11
+msgid "具体做法是打开菜单 ``File`` -> ``Project Structure`` 打开 ``Project Structure`` 设置面板，点击右侧的 ``Add Content Root`` 来添加你的源码根目录，然后点击 ``Mark as Sources`` 标记。"
+msgstr ""
+
+#: ../run.rst:16
+msgid "2. 开始调试"
+msgstr ""
+
+#: ../run/app_attach.rst:2
+msgid "启动并调试（附加调试启动器）"
+msgstr ""
+
+#: ../run/app_remote.rst:2
+msgid "启动并调试（远程调试启动器）"
+msgstr ""
+
+#: ../run/attach.rst:2
+msgid "Attach Debug 附加调试"
+msgstr ""
+
+#: ../run/attach.rst:5
+msgid "说明：附加调试目前只能在 ``Windows`` 平台上使用，可以附加到32位和64位应用程序，因附加调试需将EmmyLua的调试模块 ``LuaInject.dll`` 注入到被调试程序进程中，一些杀毒软件、某卫士可能会弹窗报警告，如果注入过程被拦截则会出现注入失败的错误，导致调试失败。所以一定要选择放行或信任。"
+msgstr ""
+
+#: ../run/attach.rst:8
+msgid "Attach Debug 目前处于实验阶段，不稳定。如果经常出现被调试程序崩溃的情况请改使用Remote方式调试。如若能提供重现崩溃BUG的工程是最好不过了"
+msgstr ""
+
+#: ../run/attach.rst:11
+#: ../run/remote.rst:9
+msgid "1. 执行步骤"
+msgstr ""
+
+#: ../run/attach.rst:13
+msgid "运行目标程序，打开IDEA菜单 ``Run`` -> ``Attach to Local Process...``"
+msgstr ""
+
+#: ../run/attach.rst:17
+msgid "选择目标程序"
+msgstr ""
+
+#: ../run/attach.rst:21
+msgid "注意控制台LOG，出现下图LOG表明附加成功"
+msgstr ""
+
+#: ../run/attach.rst:25
+msgid "然后就可以在源码中添加断点进行调试了"
+msgstr ""
+
+#: ../run/attach.rst:30
+#: ../run/remote.rst:50
+msgid "2. 失败相关问题排查"
+msgstr ""
+
+#: ../run/attach.rst:32
+msgid "断点无效， IDEA控制台窗口出现 ``xxx not found`` 日志"
+msgstr ""
+
+#: ../run/attach.rst:38
+msgid "附加到目标程序失败，出现 ``Error: LuaInject.dll could not be loaded into the process``"
+msgstr ""
+
+#: ../run/remote.rst:2
+msgid "Remote Debug 远程调试"
+msgstr ""
+
+#: ../run/remote.rst:5
+msgid "说明：远程调试通信基于socket，内核基于mobdebug.lua ，依赖于luasocket模块，所以被调试的程序需要支持luasocket 远程调试要先启动，再启动目标程序"
+msgstr ""
+
+#: ../run/remote.rst:11
+msgid "配置Remote调试设置，点击右上角 ``Edit Configurations``"
+msgstr ""
+
+#: ../run/remote.rst:15
+msgid "点击 ``+`` 选择并创建 ``Lua Remote(Mobdebug)`` 配置"
+msgstr ""
+
+#: ../run/remote.rst:19
+msgid "设置好相关参数后点击OK"
+msgstr ""
+
+#: ../run/remote.rst:23
+msgid "点击右上角debug按钮"
+msgstr ""
+
+#: ../run/remote.rst:27
+msgid "注意IDEA控制台LOG输出，如下图所示表示启动"
+msgstr ""
+
+#: ../run/remote.rst:31
+msgid "下载 ``mobdebug.lua`` 并在目标程序的lua代码入口处添加代码"
+msgstr ""
+
+#: ../run/remote.rst:38
+msgid "或者"
+msgstr ""
+
+#: ../run/remote.rst:45
+msgid "最后启动目标程序，并注意IDEA控制台窗口，出现下图所示`Connected`则表示调试器连接成功并可以添加断点并调试了"
+msgstr ""
+
+#: ../run/remote.rst:52
+msgid "运行目标程序后控制台并没有出现`Connected`日志"
+msgstr ""
+
+#: ../run/remote.rst:54
+msgid "确认目标程序包含luasocket模块"
+msgstr ""
+
+#: ../run/remote.rst:55
+msgid "确认调试端口一致（默认是8172端口）"
+msgstr ""
+
+#: ../run/remote.rst:57
+msgid "``Connected`` 日志有，但断点无效"
+msgstr ""
+
+#: ../run/remote.rst:59
+msgid "检查 ``Sources`` 目录设置正确"
+msgstr ""
+
+#: ../run/remote.rst:60
+msgid "检查目标程序在运行时提供的文件名与源码文件的文件名一致（致少除了后缀名的前面的部分一致）"
+msgstr ""
+
+#: ../run/remote.rst:62
+msgid "此项检查快捷方式是在 ``mobdebug.lua`` 的"
+msgstr ""
+
+#: ../run/remote.rst:69
+msgid "函数中打印输出 ``file``"
+msgstr ""
+

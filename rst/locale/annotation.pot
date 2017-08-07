@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, tangzx(love.tangzx@qq.com)
+# This file is distributed under the same license as the EmmyLua for IntelliJ IDEA package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-07 16:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../annotation.rst:4
+msgid "Annotations"
+msgstr ""
+
+#: ../annotation.rst:8
+msgid "EmmyLua use ``annotation`` to improve code completions and other features."
+msgstr ""
+
+#: ../annotation.rst:12
+msgid "EmmyLua注解功能只是单纯的辅助编辑器代码提示以及其它功能，和Lua代码的实际运行逻辑没有任何关系，因为它们就是普通的Lua注释"
+msgstr ""
+
