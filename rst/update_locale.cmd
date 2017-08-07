@@ -1,0 +1,1 @@
+sphinx-intl update -p locale -l zh_CN
