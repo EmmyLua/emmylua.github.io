@@ -14,11 +14,10 @@
 * 应用目标：
 
     + 函数
-
-* 示例：
-
+    
     .. code-block:: lua
         :linenos:
+        :emphasize-lines: 1
 
         ---@return Car|Ship
         local function create()
@@ -30,6 +29,7 @@
     
     .. code-block:: lua
         :linenos:
+        :emphasize-lines: 1
 
         ---@return Car
         function factory:create()

@@ -188,23 +188,32 @@
 <blockquote>
 <div><ul class="simple">
 <li>函数参数</li>
-<li>for循环参数</li>
 </ul>
-</div></blockquote>
-</li>
-<li><p class="first">示例：</p>
-<blockquote>
-<div><div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">---@param car Car</span>
-<span class="kd">local</span> <span class="kr">function</span> <span class="nf">setCar</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@param car Car</span>
+</span><span class="kd">local</span> <span class="kr">function</span> <span class="nf">setCar</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+    <span class="p">...</span>
 <span class="kr">end</span>
 </pre></div>
 </td></tr></table></div>
 <div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">---@param car Car</span>
-<span class="kr">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">car</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">list</span><span class="p">)</span> <span class="kr">do</span>
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@param car Car</span>
+</span><span class="n">setCallback</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+    <span class="p">...</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>for循环参数</li>
+</ul>
+<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@param car Car</span>
+</span><span class="kr">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">car</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">list</span><span class="p">)</span> <span class="kr">do</span>
 <span class="kr">end</span>
 </pre></div>
 </td></tr></table></div>

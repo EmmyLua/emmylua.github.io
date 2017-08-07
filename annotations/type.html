@@ -184,33 +184,29 @@
 </pre></div>
 </div>
 <ul>
-<li><dl class="first docutils">
-<dt>应用目标：</dt>
-<dd><ul class="first last simple">
-<li>local 变量</li>
-<li>global 变量</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p class="first">示例：</p>
+<li><p class="first">应用目标：</p>
 <blockquote>
-<div><div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div><ul class="simple">
+<li>local 变量</li>
+</ul>
+<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
 5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type Car @汽车的实例</span>
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type Car @汽车的实例</span>
 </span><span class="kd">local</span> <span class="n">car1</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="hll"><span class="c1">---@type Car|Ship @交通工具，车或者船。因lua脚本的灵活性，一个变量可能对应多个类型，</span>
 </span><span class="c1">---用|符号列出可能的类型</span>
 <span class="kd">local</span> <span class="n">transport</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="hll"><span class="c1">---@type Car @标记全局的变量类型</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>global 变量</li>
+</ul>
+<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type Car @标记全局的变量类型</span>
 </span><span class="n">global_car</span> <span class="o">=</span> <span class="p">{}</span>
 </pre></div>
 </td></tr></table></div>

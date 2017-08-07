@@ -14,18 +14,30 @@
 * 应用目标：
 
     + 函数参数
-    + for循环参数
-
-* 示例：
 
     .. code-block:: lua
         :linenos:
+        :emphasize-lines: 1
 
         ---@param car Car
         local function setCar(car)
+            ...
         end
+
     .. code-block:: lua
         :linenos:
+        :emphasize-lines: 1
+
+        ---@param car Car
+        setCallback(function(car)
+            ...
+        end)
+
+    + for循环参数
+
+    .. code-block:: lua
+        :linenos:
+        :emphasize-lines: 1
 
         ---@param car Car
         for k, car in ipairs(list) do

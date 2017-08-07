@@ -13,14 +13,16 @@
 
 * 应用目标：
 
-    + 有类`@class`注解的地方
-
-* 示例：
-
+    + 在 ``@class`` 注解之后
+    
     .. code-block:: lua
         :linenos:
+        :emphasize-lines: 2
         
         ---@class Car
         ---@field public name string @标记Car有一个name属性，代码提示中会出现相应提示
         local cls = class()
         
+
+.. seealso::
+    :ref:`ann_class`
