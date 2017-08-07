@@ -1,3 +1,4 @@
 /*.inv
 /*.buildinfo
 .doctrees
+*.mo

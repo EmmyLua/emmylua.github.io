@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Attach Debug 附加调试 &mdash; EmmyLua for IntelliJ IDEA 1.0 documentation</title>
+  <title>Attach Debug 附加调试 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -32,10 +32,10 @@
   
 
   
-        <link rel="index" title="Index"
+        <link rel="index" title="索引"
               href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 documentation" href="../index.html"/>
+        <link rel="search" title="搜索" href="../search.html"/>
+    <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 文档" href="../index.html"/>
         <link rel="up" title="运行与调试" href="../run.html"/>
         <link rel="next" title="Remote Debug 远程调试" href="remote.html"/>
         <link rel="prev" title="运行与调试" href="../run.html"/> 
@@ -98,8 +98,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../template.html">代码片段模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../run.html">运行与调试</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../run.html#id2">1. 准备</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../run.html#id3">2. 开始调试</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../run.html#get-ready">1. Get ready</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../run.html#id1">2. 开始调试</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Attach Debug 附加调试</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">1. 执行步骤</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">2. 失败相关问题排查</a></li>
@@ -178,17 +178,17 @@
            <div itemprop="articleBody">
             
   <div class="section" id="attach-debug">
-<h1>Attach Debug 附加调试<a class="headerlink" href="#attach-debug" title="Permalink to this headline">¶</a></h1>
+<h1>Attach Debug 附加调试<a class="headerlink" href="#attach-debug" title="永久链接至标题">¶</a></h1>
 <div class="admonition hint">
-<p class="first admonition-title">Hint</p>
+<p class="first admonition-title">提示</p>
 <p class="last">说明：附加调试目前只能在 <code class="docutils literal"><span class="pre">Windows</span></code> 平台上使用，可以附加到32位和64位应用程序，因附加调试需将EmmyLua的调试模块 <code class="docutils literal"><span class="pre">LuaInject.dll</span></code> 注入到被调试程序进程中，一些杀毒软件、某卫士可能会弹窗报警告，如果注入过程被拦截则会出现注入失败的错误，导致调试失败。所以一定要选择放行或信任。</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">注解</p>
 <p class="last">Attach Debug 目前处于实验阶段，不稳定。如果经常出现被调试程序崩溃的情况请改使用Remote方式调试。如若能提供重现崩溃BUG的工程是最好不过了</p>
 </div>
 <div class="section" id="id1">
-<h2>1. 执行步骤<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>1. 执行步骤<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li>运行目标程序，打开IDEA菜单 <code class="docutils literal"><span class="pre">Run</span></code> -&gt; <code class="docutils literal"><span class="pre">Attach</span> <span class="pre">to</span> <span class="pre">Local</span> <span class="pre">Process...</span></code></li>
 </ul>
@@ -207,7 +207,7 @@
 <img alt="../_images/attach-debug.png" src="../_images/attach-debug.png" />
 </div>
 <div class="section" id="id2">
-<h2>2. 失败相关问题排查<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>2. 失败相关问题排查<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li>断点无效， IDEA控制台窗口出现 <code class="docutils literal"><span class="pre">xxx</span> <span class="pre">not</span> <span class="pre">found</span></code> 日志</li>
 </ul>
@@ -276,6 +276,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 

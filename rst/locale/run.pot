@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 16:31+0800\n"
+"POT-Creation-Date: 2017-08-07 17:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,23 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../run.rst:2
-msgid "运行与调试"
-msgstr ""
-
-#: ../run.rst:5
-msgid "1. 准备"
+#: ../run.rst:4
+msgid "Run And Debug"
 msgstr ""
 
 #: ../run.rst:9
+msgid "1. Get ready"
+msgstr ""
+
+#: ../run.rst:13
 msgid "必须将源码的根目录设置为 ``Sources`` 目录。"
 msgstr ""
 
-#: ../run.rst:11
+#: ../run.rst:15
 msgid "具体做法是打开菜单 ``File`` -> ``Project Structure`` 打开 ``Project Structure`` 设置面板，点击右侧的 ``Add Content Root`` 来添加你的源码根目录，然后点击 ``Mark as Sources`` 标记。"
 msgstr ""
 
-#: ../run.rst:16
+#: ../run.rst:20
 msgid "2. 开始调试"
 msgstr ""
 

@@ -1,16 +1,15 @@
-从zip文件安装
+via Zip file
 -------------
 
-* 下载zip文件
+* Download zip file.
 
-	+ 从 `JetBrains Plugin Repository <https://plugins.jetbrains.com/plugin/9768-emmylua>`__ 下载
-	+ 从 `Github release page <https://github.com/tangzx/IntelliJ-EmmyLua/releases>`__ 下载(可能不是最新版本)
-	+ 从QQ群文件下载(最新版首先在群内发布测试，群号：``29850775`` )
-
+	+ via `JetBrains Plugin Repository <https://plugins.jetbrains.com/plugin/9768-emmylua>`_
+	+ via `Github release page <https://github.com/tangzx/IntelliJ-EmmyLua/releases>`_
+	+ via QQ group: ``29850775`` (for chinese)
+	
 	.. warning::
+		Don't unzip file.
 
-		无需解压Zip文件
+* Select menu item ``File`` -> ``Settings`` -> ``Plugins`` -> ``Install plugin from disk``
 
-* 选择菜单 ``File`` -> ``Settings`` -> ``Plugins`` -> ``Install plugin from disk``
-
-* 选择刚下载的EmmyLua zip文件，安装完毕重启IDEA
+* Select the downloaded EmmyLua.zip file, and restart IDEA after installation complete.

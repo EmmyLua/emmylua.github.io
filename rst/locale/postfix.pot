@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 16:31+0800\n"
+"POT-Creation-Date: 2017-08-07 17:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../postfix.rst:3
-msgid "后缀代码完成模板"
+#: ../postfix.rst:2
+msgid "Postfix Completion"
 msgstr ""
 
 #: ../postfix/decrease.rst:2

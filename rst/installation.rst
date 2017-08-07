@@ -1,8 +1,8 @@
-====
-安装
-====
+Installation
+============
+
 .. note::
-	EmmyLua可安装在所有 `IDEA <https://www.jetbrains.com/>`__ 产品中，要求版本 ``2017.1`` 及以上
+	EmmyLua can be install on all product of `IDEA <https://www.jetbrains.com/>`_, Requires version ``2017.1`` or above.
 
 .. toctree::
 	installation/repo.rst

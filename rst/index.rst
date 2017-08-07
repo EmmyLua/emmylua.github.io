@@ -1,7 +1,7 @@
 EmmyLua
 =======
 
-EmmyLua 插件中文文档
+Welcome to read EmmyLua doc. 
 
 .. toctree::
    :maxdepth: 2
