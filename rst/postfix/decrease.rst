@@ -2,6 +2,6 @@ decrease
 ------------------
 
 .. note::
-	快速生成 ``expr = expr - 1`` 表达式
+	Generate ``expr = expr - 1`` statment.
 
 .. image:: /images/postfix/decrease.gif

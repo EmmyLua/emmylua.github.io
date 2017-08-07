@@ -2,6 +2,6 @@ return
 ------------------
 
 .. note::
-	快速生成 ``return expr`` 表达式
+	Generate ``return expr`` statment.
 
 .. image:: /images/postfix/return.gif

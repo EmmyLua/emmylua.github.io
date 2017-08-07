@@ -2,6 +2,6 @@ var
 ------------------
 
 .. note::
-	快速抽取变量
+	Introduce variable.
 
 .. image:: /images/postfix/var.gif

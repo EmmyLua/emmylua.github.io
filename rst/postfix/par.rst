@@ -2,6 +2,7 @@ par
 ------------------
 
 .. note::
-	快速添加 ``()``
+
+	Wrap expressions with parenthesis
 
 .. image:: /images/postfix/par.gif

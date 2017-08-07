@@ -2,6 +2,6 @@ if
 ------------------
 
 .. note::
-	快速生成 ``if expr then end`` 表达式
+	Generate  ``if expr then end`` statment.
 
 .. image:: /images/postfix/if.gif

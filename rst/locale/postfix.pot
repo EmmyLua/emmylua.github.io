@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 17:04+0800\n"
+"POT-Creation-Date: 2017-08-07 18:55+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "decrease"
 msgstr ""
 
 #: ../postfix/decrease.rst:5
-msgid "快速生成 ``expr = expr - 1`` 表达式"
+msgid "Generate ``expr = expr - 1`` statment."
 msgstr ""
 
 #: ../postfix/for.rst:2
@@ -33,7 +33,7 @@ msgid "for"
 msgstr ""
 
 #: ../postfix/for.rst:5
-msgid "快速生成 ``for i = 1, expr do end`` 表达式"
+msgid "Generate ``for i = 1, expr do end`` statment."
 msgstr ""
 
 #: ../postfix/for_i.rst:2
@@ -41,7 +41,7 @@ msgid "for_i"
 msgstr ""
 
 #: ../postfix/for_i.rst:5
-msgid "快速生成 ``for i, v in ipairs(expr) do end`` 表达式"
+msgid "Generate ``for i, v in ipairs(expr) do end`` statment."
 msgstr ""
 
 #: ../postfix/for_p.rst:2
@@ -49,7 +49,7 @@ msgid "for_p"
 msgstr ""
 
 #: ../postfix/for_p.rst:5
-msgid "快速生成 ``for k, v in pairs(expr) do end`` 表达式"
+msgid "Generate ``for k, v in pairs(expr) do end`` statment."
 msgstr ""
 
 #: ../postfix/if.rst:2
@@ -57,7 +57,7 @@ msgid "if"
 msgstr ""
 
 #: ../postfix/if.rst:5
-msgid "快速生成 ``if expr then end`` 表达式"
+msgid "Generate  ``if expr then end`` statment."
 msgstr ""
 
 #: ../postfix/if_nil.rst:2
@@ -65,7 +65,7 @@ msgid "if_nil"
 msgstr ""
 
 #: ../postfix/if_nil.rst:5
-msgid "快速生成 ``if expr == nil then end`` 表达式"
+msgid "Generate ``if expr == nil then end`` statment."
 msgstr ""
 
 #: ../postfix/if_not_nil.rst:2
@@ -73,7 +73,7 @@ msgid "if_not_nil"
 msgstr ""
 
 #: ../postfix/if_not_nil.rst:5
-msgid "快速生成 ``if expr ~= nil then end`` 表达式"
+msgid "Generate ``if expr ~= nil then end`` statment."
 msgstr ""
 
 #: ../postfix/increase.rst:2
@@ -81,15 +81,15 @@ msgid "increase"
 msgstr ""
 
 #: ../postfix/increase.rst:5
-msgid "快速生成 ``expr = expr + 1`` 表达式"
+msgid "Generate ``expr = expr + 1`` statment."
 msgstr ""
 
 #: ../postfix/par.rst:2
 msgid "par"
 msgstr ""
 
-#: ../postfix/par.rst:5
-msgid "快速添加 ``()``"
+#: ../postfix/par.rst:6
+msgid "Wrap expressions with parenthesis"
 msgstr ""
 
 #: ../postfix/return.rst:2
@@ -97,7 +97,7 @@ msgid "return"
 msgstr ""
 
 #: ../postfix/return.rst:5
-msgid "快速生成 ``return expr`` 表达式"
+msgid "Generate ``return expr`` statment."
 msgstr ""
 
 #: ../postfix/var.rst:2
@@ -105,6 +105,6 @@ msgid "var"
 msgstr ""
 
 #: ../postfix/var.rst:5
-msgid "快速抽取变量"
+msgid "Introduce variable."
 msgstr ""
 

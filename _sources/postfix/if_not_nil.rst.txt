@@ -2,6 +2,6 @@ if_not_nil
 ------------------
 
 .. note::
-	快速生成 ``if expr ~= nil then end`` 表达式
+	Generate ``if expr ~= nil then end`` statment.
 
 .. image:: /images/postfix/if_not_nil.gif
