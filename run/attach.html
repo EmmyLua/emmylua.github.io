@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Attach Debug 附加调试 &mdash; EmmyLua for IntelliJ IDEA 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="运行与调试" href="../run.html"/>
+        <link rel="next" title="Remote Debug 远程调试" href="remote.html"/>
+        <link rel="prev" title="运行与调试" href="../run.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EmmyLua for IntelliJ IDEA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../highlight.html">语法高亮释义</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../annotation.html">注解功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template.html">代码片段模板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../run.html">运行与调试</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../run.html#id2">1. 准备</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../run.html#id3">2. 开始调试</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Attach Debug 附加调试</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">1. 执行步骤</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">2. 失败相关问题排查</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="remote.html">Remote Debug 远程调试</a></li>
+<li class="toctree-l3"><a class="reference internal" href="app_attach.html">启动并调试（附加调试启动器）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="app_remote.html">启动并调试（远程调试启动器）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../changelogs.html">Changelogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EmmyLua for IntelliJ IDEA</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../run.html">运行与调试</a> &raquo;</li>
+        
+      <li>Attach Debug 附加调试</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="attach-debug">
+<h1>Attach Debug 附加调试<a class="headerlink" href="#attach-debug" title="Permalink to this headline">¶</a></h1>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">说明：附加调试目前只能在 <code class="docutils literal"><span class="pre">Windows</span></code> 平台上使用，可以附加到32位和64位应用程序，因附加调试需将EmmyLua的调试模块 <code class="docutils literal"><span class="pre">LuaInject.dll</span></code> 注入到被调试程序进程中，一些杀毒软件、某卫士可能会弹窗报警告，如果注入过程被拦截则会出现注入失败的错误，导致调试失败。所以一定要选择放行或信任。</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Attach Debug 目前处于实验阶段，不稳定。如果经常出现被调试程序崩溃的情况请改使用Remote方式调试。如若能提供重现崩溃BUG的工程是最好不过了</p>
+</div>
+<div class="section" id="id1">
+<h2>1. 执行步骤<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>运行目标程序，打开IDEA菜单 <code class="docutils literal"><span class="pre">Run</span></code> -&gt; <code class="docutils literal"><span class="pre">Attach</span> <span class="pre">to</span> <span class="pre">Local</span> <span class="pre">Process...</span></code></li>
+</ul>
+<img alt="../_images/attach-to-local-process.png" src="../_images/attach-to-local-process.png" />
+<ul class="simple">
+<li>选择目标程序</li>
+</ul>
+<img alt="../_images/attach-with.png" src="../_images/attach-with.png" />
+<ul class="simple">
+<li>注意控制台LOG，出现下图LOG表明附加成功</li>
+</ul>
+<img alt="../_images/attach-finish.png" src="../_images/attach-finish.png" />
+<ul class="simple">
+<li>然后就可以在源码中添加断点进行调试了</li>
+</ul>
+<img alt="../_images/attach-debug.png" src="../_images/attach-debug.png" />
+</div>
+<div class="section" id="id2">
+<h2>2. 失败相关问题排查<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>断点无效， IDEA控制台窗口出现 <code class="docutils literal"><span class="pre">xxx</span> <span class="pre">not</span> <span class="pre">found</span></code> 日志</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">请确认</span> <span class="n">Sources</span> <span class="n">目录设置正确</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>附加到目标程序失败，出现 <code class="docutils literal"><span class="pre">Error:</span> <span class="pre">LuaInject.dll</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">loaded</span> <span class="pre">into</span> <span class="pre">the</span> <span class="pre">process</span></code></li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span>检查是否被杀软、安全卫士拦截了注入过程
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="remote.html" class="btn btn-neutral float-right" title="Remote Debug 远程调试" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../run.html" class="btn btn-neutral" title="运行与调试" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, tangzx(love.tangzx@qq.com).
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+@field 属性注解
+-------------------
+
+.. note::
+
+    利用 ``@field`` 注解来标记某个类的额外的属性（即使这个属性没有出现在代码里）
+
+* 完整格式：
+
+::
+
+    ---@field public|protected {my_field} {field_type}[|other_type] @comment string
+
+* 应用目标：
+
+    + 有类`@class`注解的地方
+
+* 示例：
+
+    .. code-block:: lua
+        :linenos:
+        
+        ---@class Car
+        ---@field public name string @标记Car有一个name属性，代码提示中会出现相应提示
+        local cls = class()
+        
