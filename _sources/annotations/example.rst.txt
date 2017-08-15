@@ -5,7 +5,7 @@
     :linenos:
 
     ---@class Transport @父类
-    ---@public name string
+    ---@public field name string
     local transport = {}
 
     function transport:move()end
