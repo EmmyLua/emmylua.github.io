@@ -3,6 +3,7 @@ Remote Debug 远程调试
 
 .. hint::
     说明：远程调试通信基于socket，内核基于mobdebug.lua ，依赖于luasocket模块，所以被调试的程序需要支持luasocket
+    
     远程调试要先启动，再启动目标程序
 
 1. 执行步骤

@@ -1,0 +1,21 @@
+1.1.8
+=====
+
+1.1.8b2
+-------
+1. 内置 ``string`` , ``table`` , ``boolean`` , ``number`` , ``void`` 类型
+2. 全局变量/方法可以在 ``_G`` 中显示代码完成提示
+3. 支持形如 ``aa['name']`` 的属性
+
+1.1.8b1
+-------
+
+1. Backspace可以一次性删除字符串引号 ``''`` ``""``
+2. 优化local和global代码完成提示
+3. 优化 ``paren postfix``
+4. 设置项 ``LuaCheck`` 调整到 ``EmmyLua`` 节点下
+5. attach debug 控制台显示被附加的程序名信息
+6. 修复 `issue 22 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/22>`__
+7. 修复 `issue 31 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/31>`__ Lua文件第一行 ``shebang`` #! 支持
+8. 修复 `issue 32 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/32>`__ 缩进BUG修复
+9. 修复 `issue 35 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/35>`__
