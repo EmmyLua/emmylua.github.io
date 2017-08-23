@@ -1,6 +1,29 @@
 1.1.8
 =====
 
+1.1.8b3 ( `7c6bfd0 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/426e8f68625bf9d9d604adab861988ed96a5e079>`__ )
+--------------------------------------------------------------------------------------------------------------------
+1. 支持复杂类型注解
+
+    * 数组： ``type[]``
+
+    .. seealso::
+        :ref:`ann_array`
+
+    * 字典： ``table<number, type>``
+
+    .. seealso::
+        :ref:`ann_dict`
+
+    * 函数： ``fun(param:number):type``
+
+    .. seealso::
+        :ref:`ann_fun`
+
+2. 支持对于数组及字典在for中变量的代码提示
+3. 添加教学模板文件创建菜单项
+4. ``---@field public name type`` 可简写成 ``---@field name type``
+
 1.1.8b2
 -------
 1. 内置 ``string`` , ``table`` , ``boolean`` , ``number`` , ``void`` 类型
