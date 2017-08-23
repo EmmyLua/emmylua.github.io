@@ -24,7 +24,7 @@
 
     .. code-block:: lua
         :linenos:
-        :emphasize-lines: 10
+        :emphasize-lines: 4, 10
 
         ---@class Emmy
         ---@field name string
