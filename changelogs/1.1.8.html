@@ -201,7 +201,32 @@
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">支持对于数组及字典在for中变量的代码提示</p>
+<li><p class="first">闭包函数参数类型推测</p>
+<blockquote>
+<div><div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">---@class Emmy</span>
+<span class="c1">---@field name string</span>
+
+<span class="c1">---@param callback fun(param:Emmy):void</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">testCallback</span><span class="p">(</span><span class="n">callback</span><span class="p">)</span>
+    <span class="n">callback</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="n">testCallback</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">emmy</span><span class="p">)</span>
+<span class="hll">    <span class="c1">-- emmy. 可以出现代码提示</span>
+</span><span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div></blockquote>
 </li>
 <li><p class="first">添加教学模板文件创建菜单项</p>
 </li>

@@ -20,7 +20,24 @@
     .. seealso::
         :ref:`ann_fun`
 
-2. 支持对于数组及字典在for中变量的代码提示
+2. 闭包函数参数类型推测
+
+    .. code-block:: lua
+        :linenos:
+        :emphasize-lines: 10
+
+        ---@class Emmy
+        ---@field name string
+
+        ---@param callback fun(param:Emmy):void
+        local function testCallback(callback)
+            callback(nil)
+        end
+
+        testCallback(function(emmy) 
+            -- emmy. 可以出现代码提示
+        end)
+
 3. 添加教学模板文件创建菜单项
 4. ``---@field public name type`` 可简写成 ``---@field name type``
 
