@@ -1,7 +1,14 @@
 1.1.8
 =====
 
-1.1.8b3 ( `7c6bfd0 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/426e8f68625bf9d9d604adab861988ed96a5e079>`__ )
+1.1.8b4 ( `c85d3cf <https://github.com/tangzx/IntelliJ-EmmyLua/commit/c85d3cf6bbdab1dea13ca26db6e939d0f1e70754>`__ )
+--------------------------------------------------------------------------------------------------------------------
+1. 修复 `issue 38 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/38>`__ 影响其它语言断点的严重BUG
+2. 修复 `issue 39 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/39>`__ 当在其它语言中输入 ``:`` 字符时会强制调出完成提示框的严重BUG
+3. 修复全局变量某些时候不能提示属性的BUG
+4. 完善部分标准函数的文档注解
+
+1.1.8b3 ( `426e8f6 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/426e8f68625bf9d9d604adab861988ed96a5e079>`__ )
 --------------------------------------------------------------------------------------------------------------------
 1. 支持复杂类型注解
 
