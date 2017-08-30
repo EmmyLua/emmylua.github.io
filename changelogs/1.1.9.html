@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>字典类型 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>1.1.9 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -36,9 +36,9 @@
               href="../genindex.html"/>
         <link rel="search" title="搜索" href="../search.html"/>
     <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 文档" href="../index.html"/>
-        <link rel="up" title="注解功能" href="../annotation.html"/>
-        <link rel="next" title="函数类型" href="fun.html"/>
-        <link rel="prev" title="数组类型" href="array.html"/> 
+        <link rel="up" title="Changelogs" href="../changelogs.html"/>
+        <link rel="next" title="1.1.8 ( 482c87a )" href="1.1.8.html"/>
+        <link rel="prev" title="Changelogs" href="../changelogs.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,23 +94,18 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">安装</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../highlight.html">语法高亮释义</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../annotation.html">注解功能</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="class.html">&#64;class类声明注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="type.html">&#64;type类型标记注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="param.html">&#64;param参数类型标记注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="return.html">&#64;return 函数返回值注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="field.html">&#64;field 属性注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="language.html">&#64;language内嵌语言</a></li>
-<li class="toctree-l2"><a class="reference internal" href="array.html">数组类型</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">字典类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fun.html">函数类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="example.html">完整示例</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../annotation.html">注解功能</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../template.html">代码片段模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelogs.html">Changelogs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1.9</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#b1-c85d3cf">1.1.9b1 ( c85d3cf )</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.1.8.html">1.1.8  ( 482c87a )</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
@@ -156,9 +151,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../annotation.html">注解功能</a> &raquo;</li>
+          <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>字典类型</li>
+      <li>1.1.9</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,46 +170,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="ann-dict">
-<span id="id1"></span><h1>字典类型<a class="headerlink" href="#ann-dict" title="永久链接至标题">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">注解</p>
-<p class="last">可以利用 <code class="docutils literal"><span class="pre">table&lt;KEY_TYPE,</span> <span class="pre">VALUE_TYPE&gt;</span></code> 的方式来标注一个数据类型为字典</p>
-</div>
-<ul class="simple">
-<li>完整格式：</li>
-</ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@type</span> <span class="n">table</span><span class="o">&lt;</span><span class="n">KEY_TYPE</span><span class="p">,</span> <span class="n">VALUE_TYPE</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<ul>
-<li><p class="first">示例：</p>
-<blockquote>
-<div><div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type table&lt;string, Car&gt;</span>
-</span><span class="kd">local</span> <span class="n">dict</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="kd">local</span> <span class="n">car</span> <span class="o">=</span> <span class="n">dict</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span>
-<span class="c1">-- car. 可以出现代码提示</span>
-
-<span class="kr">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">car</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">dict</span><span class="p">)</span> <span class="kr">do</span>
-    <span class="c1">-- car. 可以出现代码提示</span>
-<span class="kr">end</span>
-</pre></div>
-</td></tr></table></div>
-</div></blockquote>
-</li>
-</ul>
-<div class="admonition seealso">
-<p class="first admonition-title">参见</p>
-<p class="last"><a class="reference internal" href="type.html#ann-type"><span class="std std-ref">&#64;type类型标记注解</span></a></p>
+  <div class="section" id="id1">
+<h1>1.1.9<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="b1-c85d3cf">
+<h2>1.1.9b1 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">c85d3cf</a> )<a class="headerlink" href="#b1-c85d3cf" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li>从构造函数推断类型，如 <code class="docutils literal"><span class="pre">local</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">xxx.new()</span></code> ， <code class="docutils literal"><span class="pre">a</span></code> 将被推断为 <code class="docutils literal"><span class="pre">xxx</span></code> 的类型，并可以设置自定义构造函数名</li>
+<li>修复在文件尾输入 <code class="docutils literal"><span class="pre">--[</span></code> 崩溃的BUG</li>
+<li>为Lua5.3的 <code class="docutils literal"><span class="pre">goto</span></code> 完善跳转和代码提示</li>
+<li>增加inspection，同名的local定义将出现同名警告</li>
+</ol>
 </div>
 </div>
 
@@ -228,10 +193,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="fun.html" class="btn btn-neutral float-right" title="函数类型" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="1.1.8.html" class="btn btn-neutral float-right" title="1.1.8 ( 482c87a )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="array.html" class="btn btn-neutral" title="数组类型" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../changelogs.html" class="btn btn-neutral" title="Changelogs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

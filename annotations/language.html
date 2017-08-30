@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>字典类型 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>@language内嵌语言 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="搜索" href="../search.html"/>
     <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 文档" href="../index.html"/>
         <link rel="up" title="注解功能" href="../annotation.html"/>
-        <link rel="next" title="函数类型" href="fun.html"/>
-        <link rel="prev" title="数组类型" href="array.html"/> 
+        <link rel="next" title="数组类型" href="array.html"/>
+        <link rel="prev" title="@field 属性注解" href="field.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -100,9 +100,9 @@
 <li class="toctree-l2"><a class="reference internal" href="param.html">&#64;param参数类型标记注解</a></li>
 <li class="toctree-l2"><a class="reference internal" href="return.html">&#64;return 函数返回值注解</a></li>
 <li class="toctree-l2"><a class="reference internal" href="field.html">&#64;field 属性注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="language.html">&#64;language内嵌语言</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">&#64;language内嵌语言</a></li>
 <li class="toctree-l2"><a class="reference internal" href="array.html">数组类型</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">字典类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dict.html">字典类型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fun.html">函数类型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="example.html">完整示例</a></li>
 </ul>
@@ -158,7 +158,7 @@
         
           <li><a href="../annotation.html">注解功能</a> &raquo;</li>
         
-      <li>字典类型</li>
+      <li>&#64;language内嵌语言</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,16 +175,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="ann-dict">
-<span id="id1"></span><h1>字典类型<a class="headerlink" href="#ann-dict" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="language">
+<span id="ann-language"></span><h1>&#64;language内嵌语言<a class="headerlink" href="#language" title="永久链接至标题">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
-<p class="last">可以利用 <code class="docutils literal"><span class="pre">table&lt;KEY_TYPE,</span> <span class="pre">VALUE_TYPE&gt;</span></code> 的方式来标注一个数据类型为字典</p>
+<p class="last">可以利用 <code class="docutils literal"><span class="pre">&#64;language</span></code> 的方式来标注一段文本为某种代码格式，从而可以显示高亮</p>
 </div>
 <ul class="simple">
 <li>完整格式：</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@type</span> <span class="n">table</span><span class="o">&lt;</span><span class="n">KEY_TYPE</span><span class="p">,</span> <span class="n">VALUE_TYPE</span><span class="o">&gt;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@language</span> <span class="n">LANGUAGE_ID</span>
 </pre></div>
 </div>
 <ul>
@@ -193,29 +193,18 @@
 <div><div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type table&lt;string, Car&gt;</span>
-</span><span class="kd">local</span> <span class="n">dict</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="kd">local</span> <span class="n">car</span> <span class="o">=</span> <span class="n">dict</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span>
-<span class="c1">-- car. 可以出现代码提示</span>
-
-<span class="kr">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">car</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">dict</span><span class="p">)</span> <span class="kr">do</span>
-    <span class="c1">-- car. 可以出现代码提示</span>
-<span class="kr">end</span>
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@language JSON</span>
+</span><span class="kd">local</span> <span class="n">jsonText</span> <span class="o">=</span> <span class="s">[[{</span>
+<span class="s">    &quot;name&quot;:&quot;Emmy&quot;</span>
+<span class="s">}]]</span>
 </pre></div>
 </td></tr></table></div>
 </div></blockquote>
 </li>
+<li><p class="first">效果：</p>
+</li>
 </ul>
-<div class="admonition seealso">
-<p class="first admonition-title">参见</p>
-<p class="last"><a class="reference internal" href="type.html#ann-type"><span class="std std-ref">&#64;type类型标记注解</span></a></p>
-</div>
+<img alt="../_images/language_injector.png" src="../_images/language_injector.png" />
 </div>
 
 
@@ -228,10 +217,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="fun.html" class="btn btn-neutral float-right" title="函数类型" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="array.html" class="btn btn-neutral float-right" title="数组类型" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="array.html" class="btn btn-neutral" title="数组类型" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="field.html" class="btn btn-neutral" title="@field 属性注解" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
