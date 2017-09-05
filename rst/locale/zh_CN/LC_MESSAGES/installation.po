@@ -24,9 +24,9 @@ msgstr "安装"
 
 #: ../installation.rst:5
 msgid ""
-"EmmyLua can be install on all product of `IDEA "
+"EmmyLua can be install on all product of `Jetbrains "
 "<https://www.jetbrains.com/>`_, Requires version ``2017.1`` or above."
-msgstr "EmmyLua可安装在所有 `IDEA <https://www.jetbrains.com/>`_ 产品中，要求版本 ``2017.1`` 及以上"
+msgstr "EmmyLua可安装在所有 `Jetbrains <https://www.jetbrains.com/>`_ 产品中，要求版本 ``2017.1`` 及以上"
 
 #: ../installation/repo.rst:4
 msgid "via JetBrains Plugin Repository"

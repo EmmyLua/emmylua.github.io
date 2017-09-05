@@ -8,7 +8,6 @@ Welcome to read EmmyLua doc.
    :glob:
 
    installation
-   highlight
    annotation
    template
    postfix
