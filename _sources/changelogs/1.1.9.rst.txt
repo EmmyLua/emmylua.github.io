@@ -1,7 +1,7 @@
-1.1.9 ( `8ce698b <https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b>`__ )
+1.1.9 ( `5aed300 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/5aed3007e1de02bdf6739a9ddccd89ed15d86ac8>`__ )
 ==================================================================================================================
 
-1.1.9b2 ( `8ce698b <https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b>`__ )
+1.1.9b2 ( `5aed300 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/5aed3007e1de02bdf6739a9ddccd89ed15d86ac8>`__ )
 --------------------------------------------------------------------------------------------------------------------
 1. [NEW] 注释可以选择严格模式，即格式写错会报错，默认是容错模式。需在 ``settings`` / ``EmmyLua`` / ``strict doc`` 中开启
 
@@ -35,7 +35,7 @@
 9. [FIX] `issue 41 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/41>`__
 10. [IMPROVE] 在关键字如 ``local, function ...`` 代码完成时自动在其后添加空格
 11. [IMPROVE] 改进Quick Documentation
-12. [CHANGE] 在函数/方法代码完成时不创建参数模型
+12. [CHANGE] 在函数/方法代码完成时不创建参数模板
 13. [FIX] 解决前置声明local函数的BUG
 
 1.1.9b1 ( `8ce698b <https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b>`__ )
