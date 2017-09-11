@@ -175,7 +175,7 @@
 <div class="section" id="b2-8ce698b">
 <h2>1.1.9b2 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">8ce698b</a> )<a class="headerlink" href="#b2-8ce698b" title="永久链接至标题">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">[NEW] 注释可以选择严格模式，即格式写错会报错，默认是容错模式。需在 <code class="docutils literal"><span class="pre">settings/EmmyLua/strict</span> <span class="pre">doc</span></code> 中开启</p>
+<li><p class="first">[NEW] 注释可以选择严格模式，即格式写错会报错，默认是容错模式。需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">EmmyLua</span></code> / <code class="docutils literal"><span class="pre">strict</span> <span class="pre">doc</span></code> 中开启</p>
 <blockquote>
 <div><img alt="../_images/doc.png" src="../_images/doc.png" />
 </div></blockquote>
@@ -216,17 +216,21 @@
 </li>
 <li><p class="first">[IMPROVE] 在关键字如 <code class="docutils literal"><span class="pre">local,</span> <span class="pre">function</span> <span class="pre">...</span></code> 代码完成时自动在其后添加空格</p>
 </li>
+<li><p class="first">[IMPROVE] 改进Quick Documentation</p>
+</li>
 <li><p class="first">[CHANGE] 在函数/方法代码完成时不创建参数模型</p>
+</li>
+<li><p class="first">[FIX] 解决前置声明local函数的BUG</p>
 </li>
 </ol>
 </div>
 <div class="section" id="b1-8ce698b">
 <h2>1.1.9b1 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">8ce698b</a> )<a class="headerlink" href="#b1-8ce698b" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li>从构造函数推断类型，如 <code class="docutils literal"><span class="pre">local</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">xxx.new()</span></code> ， <code class="docutils literal"><span class="pre">a</span></code> 将被推断为 <code class="docutils literal"><span class="pre">xxx</span></code> 的类型，并可以设置自定义构造函数名</li>
-<li>修复在文件尾输入 <code class="docutils literal"><span class="pre">--[</span></code> 崩溃的BUG</li>
-<li>为Lua5.3的 <code class="docutils literal"><span class="pre">goto</span></code> 完善跳转和代码提示</li>
-<li>增加inspection，同名的local定义将出现同名警告</li>
+<li>[NEW] 从构造函数推断类型，如 <code class="docutils literal"><span class="pre">local</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">xxx.new()</span></code> ， <code class="docutils literal"><span class="pre">a</span></code> 将被推断为 <code class="docutils literal"><span class="pre">xxx</span></code> 的类型，并可以设置自定义构造函数名</li>
+<li>[FIX] 修复在文件尾输入 <code class="docutils literal"><span class="pre">--[</span></code> 崩溃的BUG</li>
+<li>[NEW] 为Lua5.3的 <code class="docutils literal"><span class="pre">goto</span></code> 完善跳转和代码提示</li>
+<li>[NEW] 增加inspection，同名的local定义将出现同名警告</li>
 </ol>
 </div>
 </div>

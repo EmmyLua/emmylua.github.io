@@ -3,14 +3,14 @@
 
 1.1.8b4 ( `c85d3cf <https://github.com/tangzx/IntelliJ-EmmyLua/commit/c85d3cf6bbdab1dea13ca26db6e939d0f1e70754>`__ )
 --------------------------------------------------------------------------------------------------------------------
-1. 修复 `issue 38 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/38>`__ 影响其它语言断点的严重BUG
-2. 修复 `issue 39 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/39>`__ 当在其它语言中输入 ``:`` 字符时会强制调出完成提示框的严重BUG
-3. 修复全局变量某些时候不能提示属性的BUG
-4. 完善部分标准函数的文档注解
+1. [FIX] 修复 `issue 38 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/38>`__ 影响其它语言断点的严重BUG
+2. [FIX] 修复 `issue 39 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/39>`__ 当在其它语言中输入 ``:`` 字符时会强制调出完成提示框的严重BUG
+3. [FIX] 修复全局变量某些时候不能提示属性的BUG
+4. [IMPROVE] 完善部分标准函数的文档注解
 
 1.1.8b3 ( `426e8f6 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/426e8f68625bf9d9d604adab861988ed96a5e079>`__ )
 --------------------------------------------------------------------------------------------------------------------
-1. 支持复杂类型注解
+1. [NEW] 支持复杂类型注解
 
     * 数组： ``type[]``
 
@@ -27,7 +27,7 @@
     .. seealso::
         :ref:`ann_fun`
 
-2. 闭包函数参数类型推测
+2. [NEW] 闭包函数参数类型推测
 
     .. code-block:: lua
         :linenos:
@@ -45,24 +45,24 @@
             -- emmy. 可以出现代码提示
         end)
 
-3. 添加教学模板文件创建菜单项
-4. ``---@field public name type`` 可简写成 ``---@field name type``
+3. [NEW] 添加教学模板文件创建菜单项
+4. [IMPROVE] ``---@field public name type`` 可简写成 ``---@field name type``
 
 1.1.8b2
 -------
-1. 内置 ``string`` , ``table`` , ``boolean`` , ``number`` , ``void`` 类型
-2. 全局变量/方法可以在 ``_G`` 中显示代码完成提示
-3. 支持形如 ``aa['name']`` 的属性
+1. [NEW] 内置 ``string`` , ``table`` , ``boolean`` , ``number`` , ``void`` 类型
+2. [IMPROVE] 全局变量/方法可以在 ``_G`` 中显示代码完成提示
+3. [IMPROVE] 支持形如 ``aa['name']`` 的属性
 
 1.1.8b1
 -------
 
-1. Backspace可以一次性删除字符串引号 ``''`` ``""``
-2. 优化local和global代码完成提示
-3. 优化 ``paren postfix``
-4. 设置项 ``LuaCheck`` 调整到 ``EmmyLua`` 节点下
-5. attach debug 控制台显示被附加的程序名信息
-6. 修复 `issue 22 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/22>`__
-7. 修复 `issue 31 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/31>`__ Lua文件第一行 ``shebang`` #! 支持
-8. 修复 `issue 32 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/32>`__ 缩进BUG修复
-9. 修复 `issue 35 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/35>`__
+1. [IMPROVE] Backspace可以一次性删除字符串引号 ``''`` ``""``
+2. [IMPROVE]  优化local和global代码完成提示
+3. [IMPROVE] 优化 ``paren postfix``
+4. [CHANGE] 设置项 ``LuaCheck`` 调整到 ``EmmyLua`` 节点下
+5. [IMPROVE] attach debug 控制台显示被附加的程序名信息
+6. [FIX] 修复 `issue 22 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/22>`__
+7. [FIX] 修复 `issue 31 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/31>`__ Lua文件第一行 ``shebang`` #! 支持
+8. [FIX] 修复 `issue 32 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/32>`__ 缩进BUG修复
+9. [FIX] 修复 `issue 35 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/35>`__

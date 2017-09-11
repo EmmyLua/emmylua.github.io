@@ -36,10 +36,11 @@
 10. [IMPROVE] 在关键字如 ``local, function ...`` 代码完成时自动在其后添加空格
 11. [IMPROVE] 改进Quick Documentation
 12. [CHANGE] 在函数/方法代码完成时不创建参数模型
+13. [FIX] 解决前置声明local函数的BUG
 
 1.1.9b1 ( `8ce698b <https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b>`__ )
 --------------------------------------------------------------------------------------------------------------------
-1. 从构造函数推断类型，如 ``local a = xxx.new()`` ， ``a`` 将被推断为 ``xxx`` 的类型，并可以设置自定义构造函数名
-2. 修复在文件尾输入 ``--[`` 崩溃的BUG
-3. 为Lua5.3的 ``goto`` 完善跳转和代码提示
-4. 增加inspection，同名的local定义将出现同名警告
+1. [NEW] 从构造函数推断类型，如 ``local a = xxx.new()`` ， ``a`` 将被推断为 ``xxx`` 的类型，并可以设置自定义构造函数名
+2. [FIX] 修复在文件尾输入 ``--[`` 崩溃的BUG
+3. [NEW] 为Lua5.3的 ``goto`` 完善跳转和代码提示
+4. [NEW] 增加inspection，同名的local定义将出现同名警告

@@ -177,16 +177,16 @@
 <div class="section" id="b4-c85d3cf">
 <h2>1.1.8b4 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/c85d3cf6bbdab1dea13ca26db6e939d0f1e70754">c85d3cf</a> )<a class="headerlink" href="#b4-c85d3cf" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li>修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/38">issue 38</a> 影响其它语言断点的严重BUG</li>
-<li>修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/39">issue 39</a> 当在其它语言中输入 <code class="docutils literal"><span class="pre">:</span></code> 字符时会强制调出完成提示框的严重BUG</li>
-<li>修复全局变量某些时候不能提示属性的BUG</li>
-<li>完善部分标准函数的文档注解</li>
+<li>[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/38">issue 38</a> 影响其它语言断点的严重BUG</li>
+<li>[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/39">issue 39</a> 当在其它语言中输入 <code class="docutils literal"><span class="pre">:</span></code> 字符时会强制调出完成提示框的严重BUG</li>
+<li>[FIX] 修复全局变量某些时候不能提示属性的BUG</li>
+<li>[IMPROVE] 完善部分标准函数的文档注解</li>
 </ol>
 </div>
 <div class="section" id="b3-426e8f6">
 <h2>1.1.8b3 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/426e8f68625bf9d9d604adab861988ed96a5e079">426e8f6</a> )<a class="headerlink" href="#b3-426e8f6" title="永久链接至标题">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">支持复杂类型注解</p>
+<li><p class="first">[NEW] 支持复杂类型注解</p>
 <blockquote>
 <div><ul class="simple">
 <li>数组： <code class="docutils literal"><span class="pre">type[]</span></code></li>
@@ -211,7 +211,7 @@
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">闭包函数参数类型推测</p>
+<li><p class="first">[NEW] 闭包函数参数类型推测</p>
 <blockquote>
 <div><div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -238,32 +238,32 @@
 </td></tr></table></div>
 </div></blockquote>
 </li>
-<li><p class="first">添加教学模板文件创建菜单项</p>
+<li><p class="first">[NEW] 添加教学模板文件创建菜单项</p>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">---&#64;field</span> <span class="pre">public</span> <span class="pre">name</span> <span class="pre">type</span></code> 可简写成 <code class="docutils literal"><span class="pre">---&#64;field</span> <span class="pre">name</span> <span class="pre">type</span></code></p>
+<li><p class="first">[IMPROVE] <code class="docutils literal"><span class="pre">---&#64;field</span> <span class="pre">public</span> <span class="pre">name</span> <span class="pre">type</span></code> 可简写成 <code class="docutils literal"><span class="pre">---&#64;field</span> <span class="pre">name</span> <span class="pre">type</span></code></p>
 </li>
 </ol>
 </div>
 <div class="section" id="b2">
 <h2>1.1.8b2<a class="headerlink" href="#b2" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li>内置 <code class="docutils literal"><span class="pre">string</span></code> , <code class="docutils literal"><span class="pre">table</span></code> , <code class="docutils literal"><span class="pre">boolean</span></code> , <code class="docutils literal"><span class="pre">number</span></code> , <code class="docutils literal"><span class="pre">void</span></code> 类型</li>
-<li>全局变量/方法可以在 <code class="docutils literal"><span class="pre">_G</span></code> 中显示代码完成提示</li>
-<li>支持形如 <code class="docutils literal"><span class="pre">aa['name']</span></code> 的属性</li>
+<li>[NEW] 内置 <code class="docutils literal"><span class="pre">string</span></code> , <code class="docutils literal"><span class="pre">table</span></code> , <code class="docutils literal"><span class="pre">boolean</span></code> , <code class="docutils literal"><span class="pre">number</span></code> , <code class="docutils literal"><span class="pre">void</span></code> 类型</li>
+<li>[IMPROVE] 全局变量/方法可以在 <code class="docutils literal"><span class="pre">_G</span></code> 中显示代码完成提示</li>
+<li>[IMPROVE] 支持形如 <code class="docutils literal"><span class="pre">aa['name']</span></code> 的属性</li>
 </ol>
 </div>
 <div class="section" id="b1">
 <h2>1.1.8b1<a class="headerlink" href="#b1" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li>Backspace可以一次性删除字符串引号 <code class="docutils literal"><span class="pre">''</span></code> <code class="docutils literal"><span class="pre">&quot;&quot;</span></code></li>
-<li>优化local和global代码完成提示</li>
-<li>优化 <code class="docutils literal"><span class="pre">paren</span> <span class="pre">postfix</span></code></li>
-<li>设置项 <code class="docutils literal"><span class="pre">LuaCheck</span></code> 调整到 <code class="docutils literal"><span class="pre">EmmyLua</span></code> 节点下</li>
-<li>attach debug 控制台显示被附加的程序名信息</li>
-<li>修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/22">issue 22</a></li>
-<li>修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/31">issue 31</a> Lua文件第一行 <code class="docutils literal"><span class="pre">shebang</span></code> #! 支持</li>
-<li>修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/32">issue 32</a> 缩进BUG修复</li>
-<li>修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/35">issue 35</a></li>
+<li>[IMPROVE] Backspace可以一次性删除字符串引号 <code class="docutils literal"><span class="pre">''</span></code> <code class="docutils literal"><span class="pre">&quot;&quot;</span></code></li>
+<li>[IMPROVE]  优化local和global代码完成提示</li>
+<li>[IMPROVE] 优化 <code class="docutils literal"><span class="pre">paren</span> <span class="pre">postfix</span></code></li>
+<li>[CHANGE] 设置项 <code class="docutils literal"><span class="pre">LuaCheck</span></code> 调整到 <code class="docutils literal"><span class="pre">EmmyLua</span></code> 节点下</li>
+<li>[IMPROVE] attach debug 控制台显示被附加的程序名信息</li>
+<li>[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/22">issue 22</a></li>
+<li>[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/31">issue 31</a> Lua文件第一行 <code class="docutils literal"><span class="pre">shebang</span></code> #! 支持</li>
+<li>[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/32">issue 32</a> 缩进BUG修复</li>
+<li>[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/35">issue 35</a></li>
 </ol>
 </div>
 </div>
