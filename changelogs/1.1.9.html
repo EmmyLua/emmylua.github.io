@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.1.9 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>1.1.9 ( 8ce698b ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -98,8 +98,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1.9</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#b1-c85d3cf">1.1.9b1 ( c85d3cf )</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1.9 ( 8ce698b )</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#b2-8ce698b">1.1.9b2 ( 8ce698b )</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b1-8ce698b">1.1.9b1 ( 8ce698b )</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="1.1.8.html">1.1.8  ( 482c87a )</a></li>
@@ -152,7 +153,7 @@
         
           <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>1.1.9</li>
+      <li>1.1.9 ( 8ce698b )</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -169,10 +170,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>1.1.9<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<div class="section" id="b1-c85d3cf">
-<h2>1.1.9b1 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">c85d3cf</a> )<a class="headerlink" href="#b1-c85d3cf" title="永久链接至标题">¶</a></h2>
+  <div class="section" id="ce698b">
+<h1>1.1.9 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">8ce698b</a> )<a class="headerlink" href="#ce698b" title="永久链接至标题">¶</a></h1>
+<div class="section" id="b2-8ce698b">
+<h2>1.1.9b2 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">8ce698b</a> )<a class="headerlink" href="#b2-8ce698b" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">[NEW] 注释可以选择严格模式，即格式写错会报错，默认是容错模式。需在 <code class="docutils literal"><span class="pre">settings/EmmyLua/strict</span> <span class="pre">doc</span></code> 中开启</p>
+<blockquote>
+<div><img alt="../_images/doc.png" src="../_images/doc.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 新注解 <code class="docutils literal"><span class="pre">---&#64;language</span></code> 对lua字符串可进入代码注入(language injector)</p>
+<blockquote>
+<div><img alt="../_images/language.png" src="../_images/language.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 新注解 <code class="docutils literal"><span class="pre">---&#64;overload</span></code> 用于标注重载</p>
+<blockquote>
+<div><img alt="../_images/overload.png" src="../_images/overload.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 新注解 <code class="docutils literal"><span class="pre">---&#64;module</span></code> 用于兼容 <code class="docutils literal"><span class="pre">module()</span></code> 方式创建的模块（不建议使用）</p>
+</li>
+<li><p class="first">[NEW] 在方法上显示分割线(line separator)，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">EmmyLua</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">class</span> <span class="pre">method</span> <span class="pre">line</span> <span class="pre">separator</span></code> 中开启</p>
+<blockquote>
+<div><img alt="../_images/class_method_line.png" src="../_images/class_method_line.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 可显示本地变量（local variable）变量类型，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal"><span class="pre">Show</span> <span class="pre">local</span> <span class="pre">variable</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
+<blockquote>
+<div><img alt="../_images/local_var_type_hint.png" src="../_images/local_var_type_hint.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 可显示形参（parameter）类型，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal"><span class="pre">Show</span> <span class="pre">parameter</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
+<blockquote>
+<div><img alt="../_images/param_type_hint.png" src="../_images/param_type_hint.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 可显示函数返回值（return）类型，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal"><span class="pre">Show</span> <span class="pre">function</span> <span class="pre">return</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
+<blockquote>
+<div><img alt="../_images/function_ret_type_hint.png" src="../_images/function_ret_type_hint.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[FIX] <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/41">issue 41</a></p>
+</li>
+<li><p class="first">[IMPROVE] 在关键字如 <code class="docutils literal"><span class="pre">local,</span> <span class="pre">function</span> <span class="pre">...</span></code> 代码完成时自动在其后添加空格</p>
+</li>
+<li><p class="first">[CHANGE] 在函数/方法代码完成时不创建参数模型</p>
+</li>
+</ol>
+</div>
+<div class="section" id="b1-8ce698b">
+<h2>1.1.9b1 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">8ce698b</a> )<a class="headerlink" href="#b1-8ce698b" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
 <li>从构造函数推断类型，如 <code class="docutils literal"><span class="pre">local</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">xxx.new()</span></code> ， <code class="docutils literal"><span class="pre">a</span></code> 将被推断为 <code class="docutils literal"><span class="pre">xxx</span></code> 的类型，并可以设置自定义构造函数名</li>
 <li>修复在文件尾输入 <code class="docutils literal"><span class="pre">--[</span></code> 崩溃的BUG</li>
