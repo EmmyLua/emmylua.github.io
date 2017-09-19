@@ -16,7 +16,7 @@
     .. image:: 1.1.9/overload.png
 
 4. [NEW] 新注解 ``---@module`` 用于兼容 ``module()`` 方式创建的模块（不建议使用）
-5. [NEW] 在方法上显示分割线(line separator)，需在 ``settings`` / ``EmmyLua`` / ``show class method line separator`` 中开启
+5. [NEW] 在方法上显示分割线(line separator)，需在 ``settings`` / ``editor`` / ``general`` / ``appearance`` / ``show method separators`` 中开启
 
     .. image:: 1.1.9/class_method_line.png
 

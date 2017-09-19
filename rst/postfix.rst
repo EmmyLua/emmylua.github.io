@@ -5,6 +5,7 @@ Postfix Completion
 	postfix/par
 	postfix/var
 	postfix/if
+	postfix/if_not
 	postfix/if_nil
 	postfix/if_not_nil
 	postfix/for
