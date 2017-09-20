@@ -7,6 +7,7 @@ Welcome to read EmmyLua doc.
    :maxdepth: 2
    :glob:
 
+   donate
    installation
    annotation
    template
