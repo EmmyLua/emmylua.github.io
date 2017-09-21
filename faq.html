@@ -173,13 +173,28 @@
            <div class="articleComments">
             
            </div>
+           <div id="container"></div>
+           <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+           <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
            <script>
+           var gitment = new Gitment({
+             //id: '页面 ID', // 可选。默认为 location.href
+             owner: 'tangzx',
+             repo: 'emmydoc',
+             oauth: {
+               client_id: 'b32fae6c087d13c9c01a',
+               client_secret: '8f0cec8a2e4721b3b06da862363a6bdd465a935a',
+             },
+           })
+           gitment.render('container')
+           </script>
+           <!-- <script>
               var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
               var idcomments_post_id;
               var idcomments_post_url;
               </script>
               <span id="IDCommentsPostTitle" style="display:none"></span>
-          <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+          <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script> -->
           </div>
           <footer>
   
