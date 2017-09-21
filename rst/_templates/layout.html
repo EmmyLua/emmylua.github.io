@@ -1,0 +1,15 @@
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+{# Add some extra stuff before and use existing with 'super()' call. #}
+{% block footer %}
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?0c7a09367003982fd38b8c6625cd3db5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+  {{ super() }}
+{% endblock %}

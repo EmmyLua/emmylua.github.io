@@ -1,8 +1,6 @@
 EmmyLua
 =======
 
-.. include:: bd.rst
-
 Welcome to read EmmyLua doc. 
 
 .. toctree::
