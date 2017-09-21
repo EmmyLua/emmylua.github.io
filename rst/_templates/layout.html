@@ -1,6 +1,15 @@
 {# Import the theme's layout. #}
 {% extends "!layout.html" %}
 {# Add some extra stuff before and use existing with 'super()' call. #}
+{% block comments %}
+<script>
+    var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
+    var idcomments_post_id;
+    var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+{% endblock %}
 {% block footer %}
 <script>
     var _hmt = _hmt || [];
