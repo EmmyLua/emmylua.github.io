@@ -1,9 +1,0 @@
-==============
-Structure View
-==============
-
-.. figure:: images/structure_view/structure.png
-
-Ctrl + F12
-----------
-.. figure:: images/structure_view/quick_structure.png
