@@ -10,7 +10,7 @@
 
 ::
 
---@class {my_type}[ : parent_type] @comment string
+--@class MY_TYPE[:PARENT_TYPE] [@comment]
 
 * 应用目标：
 

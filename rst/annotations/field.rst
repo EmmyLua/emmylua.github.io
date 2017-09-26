@@ -9,7 +9,7 @@
 
 ::
 
-    ---@field public|protected {my_field} {field_type}[|other_type] @comment string
+    ---@field [public|protected] field_name FIELD_TYPE[|OTHER_TYPE] [@comment]
 
 * 应用目标：
 

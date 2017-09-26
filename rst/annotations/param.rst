@@ -9,7 +9,7 @@
 
 ::
 
-    ---@param {param_name} {my_type}[|other_type] @comment string
+    ---@param param_name MY_TYPE[|other_type] [@comment]
 
 * 应用目标：
 

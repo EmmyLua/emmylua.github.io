@@ -10,7 +10,7 @@
 
 ::
 
-  ---@type {my_type}[|other_type] @comment string
+  ---@type MY_TYPE[|OTHER_TYPE] [@comment]
 
 
 * 应用目标：
@@ -36,6 +36,16 @@
         
         ---@type Car @标记全局的变量类型
         global_car = {}
+
+    + property 属性
+
+    .. code-block:: lua
+        :linenos:
+        :emphasize-lines: 2
+
+        local obj = {}
+        ---@type Car @标记属性的类型
+        obj.car = getCar()
 
 .. seealso::
     :ref:`ann_class`

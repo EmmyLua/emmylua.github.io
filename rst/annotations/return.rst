@@ -9,7 +9,7 @@
 
 ::
 
-    ---@return {my_type}[|other_type] @comment string
+    ---@return MY_TYPE[|OTHER_TYPE] [@comment]
 
 * 应用目标：
 

@@ -185,7 +185,7 @@
 <ul class="simple">
 <li>完整格式：</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@type</span> <span class="p">{</span><span class="n">my_type</span><span class="p">}[</span><span class="o">|</span><span class="n">other_type</span><span class="p">]</span> <span class="nd">@comment</span> <span class="n">string</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@type</span> <span class="n">MY_TYPE</span><span class="p">[</span><span class="o">|</span><span class="n">OTHER_TYPE</span><span class="p">]</span> <span class="p">[</span><span class="nd">@comment</span><span class="p">]</span>
 </pre></div>
 </div>
 <ul>
@@ -213,6 +213,16 @@
 <div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type Car @标记全局的变量类型</span>
 </span><span class="n">global_car</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+</td></tr></table></div>
+<ul class="simple">
+<li>property 属性</li>
+</ul>
+<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">obj</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="hll"><span class="c1">---@type Car @标记属性的类型</span>
+</span><span class="n">obj</span><span class="p">.</span><span class="n">car</span> <span class="o">=</span> <span class="n">getCar</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></div>
 </div></blockquote>

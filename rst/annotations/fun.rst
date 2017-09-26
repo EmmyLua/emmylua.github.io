@@ -4,7 +4,7 @@
 -------------------
 
 .. note::
-    可以利用 ``fun(param:MY_TYPE):void`` 的方式来标注一个数据类型为函数
+    可以利用 ``fun(param:MY_TYPE):RETURN_TYPE`` 的方式来标注一个数据类型为函数
 
 * 完整格式：
 
