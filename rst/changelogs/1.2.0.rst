@@ -1,0 +1,31 @@
+1.2.0 ( `0be9824 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/0be98244185a27875b9721df1d00cede8893c217>`__ )
+==================================================================================================================
+
+1.2.0b1 ( `0be9824 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/0be98244185a27875b9721df1d00cede8893c217>`__ )
+--------------------------------------------------------------------------------------------------------------------
+
+1. [NEW] 面包屑（Breadcrumbs info）功能
+
+    .. image:: 1.2.0/breadcrumbs-info.gif
+
+2. [NEW] 变量名建议
+
+    .. image:: 1.2.0/suggest-name.png
+
+3. [IMPROVE] Structure View
+
+    .. image:: 1.2.0/structure-view.png
+    
+4. [IMPROVE] 颜色设置界面（Color settings page）提供更多的配置项
+5. [IMPROVE] 优化重命名建议
+
+    .. image:: 1.2.0/rename.png
+
+6. [IMPROVE] 文档注释支持 ``Markdown`` 语法
+
+    .. image:: 1.2.0/markdown.png
+
+7. [FIX] 修复 `issue 54 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/54>`__
+8. [FIX] 修复 `issue 55 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/55>`__ 注解类型可用 ``()`` 包围
+
+    .. image:: 1.2.0/ty-par.png
