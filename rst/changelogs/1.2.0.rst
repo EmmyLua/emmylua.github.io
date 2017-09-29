@@ -25,7 +25,13 @@
 
     .. image:: 1.2.0/markdown.png
 
-7. [FIX] 修复 `issue 54 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/54>`__
-8. [FIX] 修复 `issue 55 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/55>`__ 注解类型可用 ``()`` 包围
+7. [IMPROVE] 优化在文件出现的单词( ``Words in file`` )的提示，文本以及注释中出现的词都将提示
+
+8. [NEW] 变量同名警告提供修复
+
+    .. image:: 1.2.0/rename-fix.gif
+
+9. [FIX] 修复 `issue 54 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/54>`__
+10. [FIX] 修复 `issue 55 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/55>`__ 注解类型可用 ``()`` 包围
 
     .. image:: 1.2.0/ty-par.png
