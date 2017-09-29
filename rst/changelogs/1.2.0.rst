@@ -12,7 +12,7 @@
 
     .. image:: 1.2.0/suggest-name.png
 
-3. [IMPROVE] Structure View
+3. [IMPROVE] Structure View树形节点显示，由 `@mqualizz <https://github.com/mqualizz>`__ 贡献代码
 
     .. image:: 1.2.0/structure-view.png
     
