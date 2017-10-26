@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>@type类型标记注解 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>@see 引用 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -38,8 +38,8 @@
         <link rel="search" title="搜索" href="../search.html"/>
     <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 文档" href="../index.html"/>
         <link rel="up" title="注解功能" href="../annotation.html"/>
-        <link rel="next" title="@param参数类型标记注解" href="param.html"/>
-        <link rel="prev" title="@class类声明注解" href="class.html"/> 
+        <link rel="next" title="完整示例" href="example.html"/>
+        <link rel="prev" title="函数类型" href="fun.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -97,7 +97,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">安装</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../annotation.html">注解功能</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="class.html">&#64;class类声明注解</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">&#64;type类型标记注解</a></li>
+<li class="toctree-l2"><a class="reference internal" href="type.html">&#64;type类型标记注解</a></li>
 <li class="toctree-l2"><a class="reference internal" href="param.html">&#64;param参数类型标记注解</a></li>
 <li class="toctree-l2"><a class="reference internal" href="return.html">&#64;return 函数返回值注解</a></li>
 <li class="toctree-l2"><a class="reference internal" href="field.html">&#64;field 属性注解</a></li>
@@ -105,7 +105,7 @@
 <li class="toctree-l2"><a class="reference internal" href="array.html">数组类型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dict.html">字典类型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fun.html">函数类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="see.html">&#64;see 引用</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">&#64;see 引用</a></li>
 <li class="toctree-l2"><a class="reference internal" href="example.html">完整示例</a></li>
 </ul>
 </li>
@@ -160,7 +160,7 @@
         
           <li><a href="../annotation.html">注解功能</a> &raquo;</li>
         
-      <li>&#64;type类型标记注解</li>
+      <li>&#64;see 引用</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -177,62 +177,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="type">
-<span id="ann-type"></span><h1>&#64;type类型标记注解<a class="headerlink" href="#type" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="see">
+<span id="ann-see"></span><h1>&#64;see 引用<a class="headerlink" href="#see" title="永久链接至标题">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
-<p>利用 <code class="docutils literal"><span class="pre">&#64;type</span></code> 注解来标记目标变量的类型，以增强代码提示以及其它功能</p>
-<img alt="../_images/type1.gif" class="last" src="../_images/type1.gif" />
-</div>
-<ul class="simple">
-<li>完整格式：</li>
-</ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@type</span> <span class="n">MY_TYPE</span><span class="p">[</span><span class="o">|</span><span class="n">OTHER_TYPE</span><span class="p">]</span> <span class="p">[</span><span class="nd">@comment</span><span class="p">]</span>
-</pre></div>
-</div>
-<ul>
-<li><p class="first">应用目标：</p>
-<blockquote>
-<div><ul class="simple">
-<li>local 变量</li>
-</ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type Car @汽车的实例</span>
-</span><span class="kd">local</span> <span class="n">car1</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="hll"><span class="c1">---@type Car|Ship @交通工具，车或者船。因lua脚本的灵活性，一个变量可能对应多个类型，</span>
-</span><span class="c1">---用|符号列出可能的类型</span>
-<span class="kd">local</span> <span class="n">transport</span> <span class="o">=</span> <span class="p">{}</span>
-</pre></div>
-</td></tr></table></div>
-<ul class="simple">
-<li>global 变量</li>
-</ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@type Car @标记全局的变量类型</span>
-</span><span class="n">global_car</span> <span class="o">=</span> <span class="p">{}</span>
-</pre></div>
-</td></tr></table></div>
-<ul class="simple">
-<li>property 属性</li>
-</ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">obj</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="hll"><span class="c1">---@type Car @标记属性的类型</span>
-</span><span class="n">obj</span><span class="p">.</span><span class="n">car</span> <span class="o">=</span> <span class="n">getCar</span><span class="p">()</span>
-</pre></div>
-</td></tr></table></div>
-</div></blockquote>
-</li>
-</ul>
-<div class="admonition seealso">
-<p class="first admonition-title">参见</p>
-<p class="last"><a class="reference internal" href="class.html#ann-class"><span class="std std-ref">&#64;class类声明注解</span></a></p>
+<p>可以利用 <code class="docutils literal"><span class="pre">see</span></code> 的注解来标注一个引用</p>
+<img alt="../_images/see.png" class="last" src="../_images/see.png" />
 </div>
 </div>
 
@@ -243,7 +193,7 @@
 <a href="https://github.com/tangzx/IntelliJ-EmmyLua"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <script>
     var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
-    var idcomments_post_id = 'annotations/type';
+    var idcomments_post_id = 'annotations/see';
     var idcomments_post_url;
 </script>
 <span id="IDCommentsPostTitle" style="display:none"></span>
@@ -255,10 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="param.html" class="btn btn-neutral float-right" title="@param参数类型标记注解" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="example.html" class="btn btn-neutral float-right" title="完整示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="class.html" class="btn btn-neutral" title="@class类声明注解" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="fun.html" class="btn btn-neutral" title="函数类型" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -9,7 +9,7 @@
 
 ::
 
-    ---@field [public|protected] field_name FIELD_TYPE[|OTHER_TYPE] [@comment]
+    ---@field [public|protected|private] field_name FIELD_TYPE[|OTHER_TYPE] [@comment]
 
 * 应用目标：
 

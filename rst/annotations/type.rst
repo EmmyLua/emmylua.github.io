@@ -6,6 +6,8 @@
 .. note::
     利用 ``@type`` 注解来标记目标变量的类型，以增强代码提示以及其它功能
 
+    .. image:: /images/annotation/type1.gif
+
 * 完整格式：
 
 ::

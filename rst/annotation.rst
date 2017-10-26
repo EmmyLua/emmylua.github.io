@@ -21,4 +21,5 @@ EmmyLua use ``annotation`` to improve code completions and other features.
     annotations/array
     annotations/dict
     annotations/fun
+    annotations/see
     annotations/example

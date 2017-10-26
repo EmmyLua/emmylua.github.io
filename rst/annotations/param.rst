@@ -5,6 +5,8 @@
 
     利用 ``@param`` 注解来标记函数定义参数的类型，以增强代码提示以及其它功能
 
+    .. image:: /images/annotation/param1.gif
+
 * 完整格式：
 
 ::

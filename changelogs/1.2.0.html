@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.2.0 ( 0be9824 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>1.2.0 ( 59f09a9 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -100,7 +100,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.0 ( 0be9824 )</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.0 ( 59f09a9 )</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#b2-59f09a9">1.2.0b2 ( 59f09a9 )</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#b1-0be9824">1.2.0b1 ( 0be9824 )</a></li>
 </ul>
 </li>
@@ -155,7 +156,7 @@
         
           <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>1.2.0 ( 0be9824 )</li>
+      <li>1.2.0 ( 59f09a9 )</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,8 +173,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="be9824">
-<h1>1.2.0 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/0be98244185a27875b9721df1d00cede8893c217">0be9824</a> )<a class="headerlink" href="#be9824" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="f09a9">
+<h1>1.2.0 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/59f09a9b17f1cd7e64f84859ca2b112cd0dbd0c6">59f09a9</a> )<a class="headerlink" href="#f09a9" title="永久链接至标题">¶</a></h1>
+<div class="section" id="b2-59f09a9">
+<h2>1.2.0b2 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/59f09a9b17f1cd7e64f84859ca2b112cd0dbd0c6">59f09a9</a> )<a class="headerlink" href="#b2-59f09a9" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">[CHANGE] <code class="docutils literal"><span class="pre">nil/true/false</span></code> 在 <code class="docutils literal"><span class="pre">Default</span></code> 的默认颜色改变</p>
+<blockquote>
+<div><img alt="../_images/nil_true_false_color.png" src="../_images/nil_true_false_color.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[Experimental] 类型检查，对函数调用、函数内返回值、变量赋值等进行类型检查（实验性质）。需在 <code class="docutils literal"><span class="pre">Settings</span> <span class="pre">-</span> <span class="pre">Editor</span> <span class="pre">-</span> <span class="pre">Inspections</span> <span class="pre">-</span> <span class="pre">Lua</span> <span class="pre">&gt;</span> <span class="pre">Lint</span> <span class="pre">&gt;</span> <span class="pre">Type</span> <span class="pre">safety</span></code> 中开启，默认关闭。（感谢来自 <a class="reference external" href="https://github.com/Perryvw">&#64;Perry van Wesel</a> 的贡献）</p>
+</li>
+<li><p class="first">[NEW] 新注释 <code class="docutils literal"><span class="pre">&#64;see</span></code></p>
+<blockquote>
+<div><img alt="../_images/see.png" src="../_images/see.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 拼写检查(spell checker support)</p>
+<blockquote>
+<div><img alt="../_images/spell_checker.png" src="../_images/spell_checker.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[IMPROVE] Structure view 完善（感谢来自 <a class="reference external" href="https://github.com/mqualizz">&#64;Marco Qualizza</a> 的贡献）</p>
+</li>
+<li><p class="first">[IMPROVE] 支持类字段方法 <code class="docutils literal"><span class="pre">public/private/proected</span></code> 修饰</p>
+</li>
+<li><p class="first">[IMPROVE] lua解析性能优化</p>
+</li>
+<li><p class="first">[IMPROVE] 完善快速文档</p>
+</li>
+<li><p class="first">[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/63">issue 63</a></p>
+</li>
+<li><p class="first">[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/66">issue 66</a></p>
+</li>
+<li><p class="first">[FIX] 修复 <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/69">issue 69</a></p>
+</li>
+</ol>
+</div>
 <div class="section" id="b1-0be9824">
 <h2>1.2.0b1 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/0be98244185a27875b9721df1d00cede8893c217">0be9824</a> )<a class="headerlink" href="#b1-0be9824" title="永久链接至标题">¶</a></h2>
 <ol class="arabic">
@@ -187,7 +224,7 @@
 <div><img alt="../_images/suggest-name.png" src="../_images/suggest-name.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[IMPROVE] Structure View树形节点显示，由 <a class="reference external" href="https://github.com/mqualizz">&#64;mqualizz</a> 贡献代码</p>
+<li><p class="first">[IMPROVE] Structure View树形节点显示（感谢来自 <a class="reference external" href="https://github.com/mqualizz">&#64;Marco Qualizza</a> 的贡献）</p>
 <blockquote>
 <div><img alt="../_images/structure-view.png" src="../_images/structure-view.png" />
 </div></blockquote>

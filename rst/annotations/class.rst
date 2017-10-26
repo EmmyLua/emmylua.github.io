@@ -6,6 +6,8 @@
 .. note::
     EmmyLua利用 ``@class`` 注解来模拟面向对象中的类，可以继承，可以定义字段/属性
 
+    .. image:: /images/annotation/class1.png
+
 * 完整格式
 
 ::

@@ -5,6 +5,8 @@
 
     利用 ``@return`` 注解来标记函数的返回值类型
 
+    .. image:: /images/annotation/return1.gif
+
 * 完整格式：
 
 ::
