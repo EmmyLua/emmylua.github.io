@@ -98,7 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run.html">运行与调试</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelogs.html">Changelogs</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#emmyluaidea-pycharm-phpstorm"><strong>问</strong>：EmmyLua可以安装在IDEA其它的产品上吗？如PyCharm, PhpStorm…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emmylua"><strong>问</strong>：安装EmmyLua失败，出现这个怎么解决？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1"><strong>问</strong>：附加调试不稳定，经常崩溃怎么办？</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -162,10 +167,29 @@
             
   <div class="section" id="faq">
 <h1>FAQ<a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h1>
-<p><strong>问</strong>：为什么取名叫 <code class="docutils literal"><span class="pre">EmmyLua</span></code> ？</p>
-<p><strong>答</strong>：<code class="docutils literal"><span class="pre">Emmy</span></code> 是我女儿，看头像 ^_^</p>
-<p><strong>问</strong>：EmmyLua可以安装在IDEA其它的产品上吗？如PyCharm, PhpStorm…</p>
-<p><strong>答</strong>：可以，EmmyLua可以安装在所有IDEA产品上</p>
+<div class="section" id="emmyluaidea-pycharm-phpstorm">
+<h2><strong>问</strong>：EmmyLua可以安装在IDEA其它的产品上吗？如PyCharm, PhpStorm…<a class="headerlink" href="#emmyluaidea-pycharm-phpstorm" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">可以，EmmyLua可以安装在所有IDEA产品上，但最好还是安装在IDEA上（推荐社区免费版）</p>
+</div>
+</div>
+<div class="section" id="emmylua">
+<h2><strong>问</strong>：安装EmmyLua失败，出现这个怎么解决？<a class="headerlink" href="#emmylua" title="永久链接至标题">¶</a></h2>
+<img alt="_images/incompatible.png" src="_images/incompatible.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">IDEA版本太旧。<code class="docutils literal"><span class="pre">EmmyLua</span></code> 要求 <code class="docutils literal"><span class="pre">IDEA</span> <span class="pre">2017.1</span></code> 及以上版本</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><strong>问</strong>：附加调试不稳定，经常崩溃怎么办？<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>的确，目前Attach Debug方式不太稳定，经常收到崩溃的反馈。</p>
+<p class="last"><code class="docutils literal"><span class="pre">Attach</span> <span class="pre">Debug</span></code> 是基于 <code class="docutils literal"><span class="pre">Decoda</span></code> 的用C/C++写成的调试内核，出了问题比较难查，关键是我这里没有重现的环境（我自己调试Unity项目一切正常…），再加上个人时间与精力有限，所以这块的BUG修复进展不理想，如果经常崩溃建议大家还是暂时转用 <code class="docutils literal"><span class="pre">Remote</span> <span class="pre">debug</span></code> 方式来调试。</p>
+</div>
+</div>
 </div>
 
 
