@@ -1,0 +1,32 @@
+1.2.1 ( `1816138 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/1816138aa9d7c25a9731fd153ff43ace6719dced>`__ )
+==================================================================================================================
+
+1. [IMPROVE] 大幅改进 Attach Debugger，显著减少崩溃机率并提升调试性能
+2. [Experimental] 在 ``Attach Debugger`` 基础上增加 ``Lua Profiler`` 功能，用来查看性能相关数据
+
+    .. image:: 1.2.1/profiler.png
+
+    同时支持用代码来开启与关闭 profiler
+
+    .. image:: 1.2.1/profiler_api.png
+
+3. [Experimental] 在 ``Attach Debugger`` 基础上增加 ``Memory Files`` 功能，即使没有源代码也可以调试程序（从被调试程序内存中提取）
+    
+    .. image:: 1.2.1/mem_file.png
+
+4. [NEW] 为附加列表提供App图标显示
+
+    .. image:: 1.2.1/process_icon.png
+
+5. [IMPROVE] 改进格式化功能，提供对齐、换行等功能，详细请打 ``Settings->Editor->Code Style->Lua`` 预览
+6. [IMPROVE] 当光标放在一元(unary)算符( ``#``, ``not`` , ``~`` ...)、二元(binary)运行符( ``and`` , ``or`` , ``+`` , ``-`` ...)上时高亮一元或二元运算表达式的范围
+
+    .. image:: 1.2.1/unary_binary_highlight.png
+
+7. [NEW] 支持使用 .net dll 文件作为lua lib，增加代码提示
+
+    .. image:: 1.2.1/dll.png
+
+8. [NEW] 常量可计算提示
+
+    .. image:: 1.2.1/calc_expr.gif

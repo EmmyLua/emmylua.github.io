@@ -2,3 +2,5 @@
 /*.buildinfo
 .doctrees
 *.mo
+
+.vs
