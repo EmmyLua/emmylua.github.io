@@ -1,0 +1,16 @@
+1.2.2 ( `04985b6 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/04985b6030c2aa8d12e125fd1f14419deac942ae>`__ )
+==================================================================================================================
+
+1. [IMPROVE] 优化文件打开时的速度
+2. [NEW] 新增设置项 ``recognize global name as type``
+3. [NEW] 新增设置项 ``additional sources root``
+
+    .. image:: 1.2.2/additional_roots.png
+
+4. [NEW] 新检查器 ``global name can be local``
+
+    .. image:: 1.2.2/global_can_be_local.png
+
+5. [NEW] 变量读写访问检测 ``read/write access detector``
+
+    .. image:: 1.2.2/rw_access_detector.png
