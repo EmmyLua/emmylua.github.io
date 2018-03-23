@@ -1,0 +1,39 @@
+1.2.3 ( `a8c0fd1 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/a8c0fd19678bbb2949aba5ed8373346f69ca1bf8>`__ )
+==================================================================================================================
+
+1. 适配 ``IDEA 2018.1``
+2. [IMPROVE] 优化文件解析性能
+3. [IMPROVE] 优化格式化
+4. [IMPROVE] 更多的Annotation信息显示
+
+    .. image:: 1.2.3/more_annotations.png
+
+5. [IMPROVE] 优化 remote debugger 性能并适配 ``mobdebug.lua`` 0.7版本
+6. [NEW] 在运行配置中新增设置项 ``Output charset``
+7. [NEW] 在运行配置中新增设置项 ``Show/Hide console window`` （WIN32）
+
+    .. image:: 1.2.3/show_console.png
+
+8. [NEW] 新增 ``Emmy.log`` 控制台，显示附加调试器的LOG信息
+
+    .. image:: 1.2.3/emmy_console.png
+
+9. [NEW] 新增 ``Call hierarchy`` 功能（感谢来自 @LiamYao 的贡献）
+
+    .. image:: 1.2.3/call_hierarchy.png
+
+10. [NEW] 新增 region 高亮显示并可设置颜色
+
+    .. image:: 1.2.3/region.png
+
+11. [NEW] 新增 Type 类型 Doc Table Type
+
+    .. image:: 1.2.3/doc_table_type.png
+
+12. [NEW] 可折叠 --[[多行注释]] 与 [[多行字符串]]
+
+    .. image:: 1.2.3/folding.png
+
+13. 支持中文(unicode)编程
+
+    .. image:: 1.2.3/unicode_id.png

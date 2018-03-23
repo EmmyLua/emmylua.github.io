@@ -2,6 +2,7 @@ Changelogs
 ==========
 
 .. toctree::
+    changelogs/1.2.3.rst
     changelogs/1.2.2.rst
     changelogs/1.2.1.rst
     changelogs/1.2.0.rst

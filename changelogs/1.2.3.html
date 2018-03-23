@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.2.2 ( 04985b6 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>1.2.3 ( a8c0fd1 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -38,8 +38,8 @@
         <link rel="search" title="搜索" href="../search.html"/>
     <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 文档" href="../index.html"/>
         <link rel="up" title="Changelogs" href="../changelogs.html"/>
-        <link rel="next" title="1.2.1 ( 1816138 )" href="1.2.1.html"/>
-        <link rel="prev" title="1.2.3 ( a8c0fd1 )" href="1.2.3.html"/> 
+        <link rel="next" title="1.2.2 ( 04985b6 )" href="1.2.2.html"/>
+        <link rel="prev" title="Changelogs" href="../changelogs.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -100,8 +100,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.2.3.html">1.2.3 ( a8c0fd1 )</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.2 ( 04985b6 )</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.3 ( a8c0fd1 )</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.2.html">1.2.2 ( 04985b6 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.1.html">1.2.1 ( 1816138 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.0.html">1.2.0 ( 59f09a9 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.1.9.html">1.1.9 ( 5aed300 )</a></li>
@@ -155,7 +155,7 @@
         
           <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>1.2.2 ( 04985b6 )</li>
+      <li>1.2.3 ( a8c0fd1 )</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,27 +172,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="b6">
-<h1>1.2.2 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/04985b6030c2aa8d12e125fd1f14419deac942ae">04985b6</a> )<a class="headerlink" href="#b6" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="a8c0fd1">
+<h1>1.2.3 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/a8c0fd19678bbb2949aba5ed8373346f69ca1bf8">a8c0fd1</a> )<a class="headerlink" href="#a8c0fd1" title="永久链接至标题">¶</a></h1>
 <ol class="arabic">
-<li><p class="first">[IMPROVE] 优化文件打开时的速度</p>
+<li><p class="first">适配 <code class="docutils literal notranslate"><span class="pre">IDEA</span> <span class="pre">2018.1</span></code></p>
 </li>
-<li><p class="first">[NEW] 新增设置项 <code class="docutils literal notranslate"><span class="pre">recognize</span> <span class="pre">global</span> <span class="pre">name</span> <span class="pre">as</span> <span class="pre">type</span></code></p>
+<li><p class="first">[IMPROVE] 优化文件解析性能</p>
 </li>
-<li><p class="first">[NEW] 新增设置项 <code class="docutils literal notranslate"><span class="pre">additional</span> <span class="pre">sources</span> <span class="pre">root</span></code></p>
+<li><p class="first">[IMPROVE] 优化格式化</p>
+</li>
+<li><p class="first">[IMPROVE] 更多的Annotation信息显示</p>
 <blockquote>
-<div><img alt="../_images/additional_roots.png" src="../_images/additional_roots.png" />
+<div><img alt="../_images/more_annotations.png" src="../_images/more_annotations.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 新检查器 <code class="docutils literal notranslate"><span class="pre">global</span> <span class="pre">name</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">local</span></code></p>
+<li><p class="first">[IMPROVE] 优化 remote debugger 性能并适配 <code class="docutils literal notranslate"><span class="pre">mobdebug.lua</span></code> 0.7版本</p>
+</li>
+<li><p class="first">[NEW] 在运行配置中新增设置项 <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">charset</span></code></p>
+</li>
+<li><p class="first">[NEW] 在运行配置中新增设置项 <code class="docutils literal notranslate"><span class="pre">Show/Hide</span> <span class="pre">console</span> <span class="pre">window</span></code> （WIN32）</p>
 <blockquote>
-<div><img alt="../_images/global_can_be_local.png" src="../_images/global_can_be_local.png" />
+<div><img alt="../_images/show_console.png" src="../_images/show_console.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 变量读写访问检测 <code class="docutils literal notranslate"><span class="pre">read/write</span> <span class="pre">access</span> <span class="pre">detector</span></code></p>
+<li><p class="first">[NEW] 新增 <code class="docutils literal notranslate"><span class="pre">Emmy.log</span></code> 控制台，显示附加调试器的LOG信息</p>
 <blockquote>
-<div><img alt="../_images/rw_access_detector.png" src="../_images/rw_access_detector.png" />
+<div><img alt="../_images/emmy_console.png" src="../_images/emmy_console.png" />
 </div></blockquote>
+</li>
+<li><p class="first">[NEW] 新增 <code class="docutils literal notranslate"><span class="pre">Call</span> <span class="pre">hierarchy</span></code> 功能（感谢来自 &#64;LiamYao 的贡献）</p>
+<blockquote>
+<div><img alt="../_images/call_hierarchy.png" src="../_images/call_hierarchy.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] 新增 region 高亮显示并可设置颜色</p>
+<img alt="../_images/region.png" src="../_images/region.png" />
+</li>
+<li><p class="first">[NEW] 新增 Type 类型 Doc Table Type</p>
+<img alt="../_images/doc_table_type.png" src="../_images/doc_table_type.png" />
+</li>
+<li><p class="first">[NEW] 可折叠 –[[多行注释]] 与 [[多行字符串]]</p>
+<img alt="../_images/folding.png" src="../_images/folding.png" />
+</li>
+<li><p class="first">支持中文(unicode)编程</p>
+<img alt="../_images/unicode_id.png" src="../_images/unicode_id.png" />
 </li>
 </ol>
 </div>
@@ -204,7 +227,7 @@
 <a href="https://github.com/tangzx/IntelliJ-EmmyLua"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <script>
     var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
-    var idcomments_post_id = 'changelogs/1.2.2';
+    var idcomments_post_id = 'changelogs/1.2.3';
     var idcomments_post_url;
 </script>
 <span id="IDCommentsPostTitle" style="display:none"></span>
@@ -216,10 +239,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="1.2.1.html" class="btn btn-neutral float-right" title="1.2.1 ( 1816138 )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="1.2.2.html" class="btn btn-neutral float-right" title="1.2.2 ( 04985b6 )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="1.2.3.html" class="btn btn-neutral" title="1.2.3 ( a8c0fd1 )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../changelogs.html" class="btn btn-neutral" title="Changelogs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
