@@ -181,13 +181,13 @@
 <h1>&#64;param参数类型标记注解<a class="headerlink" href="#param" title="永久链接至标题">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
-<p>利用 <code class="docutils literal"><span class="pre">&#64;param</span></code> 注解来标记函数定义参数的类型，以增强代码提示以及其它功能</p>
+<p>利用 <code class="docutils literal notranslate"><span class="pre">&#64;param</span></code> 注解来标记函数定义参数的类型，以增强代码提示以及其它功能</p>
 <img alt="../_images/param1.gif" class="last" src="../_images/param1.gif" />
 </div>
 <ul class="simple">
 <li>完整格式：</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@param</span> <span class="n">param_name</span> <span class="n">MY_TYPE</span><span class="p">[</span><span class="o">|</span><span class="n">other_type</span><span class="p">]</span> <span class="p">[</span><span class="nd">@comment</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@param</span> <span class="n">param_name</span> <span class="n">MY_TYPE</span><span class="p">[</span><span class="o">|</span><span class="n">other_type</span><span class="p">]</span> <span class="p">[</span><span class="nd">@comment</span><span class="p">]</span>
 </pre></div>
 </div>
 <ul>
@@ -196,7 +196,7 @@
 <div><ul class="simple">
 <li>函数参数</li>
 </ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@param car Car</span>
@@ -205,7 +205,7 @@
 <span class="kr">end</span>
 </pre></div>
 </td></tr></table></div>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@param car Car</span>
@@ -217,7 +217,7 @@
 <ul class="simple">
 <li>for循环参数</li>
 </ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="hll"><span class="c1">---@param car Car</span>
 </span><span class="kr">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">car</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">list</span><span class="p">)</span> <span class="kr">do</span>

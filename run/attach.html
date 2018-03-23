@@ -182,7 +182,7 @@
 <h1>Attach Debug 附加调试<a class="headerlink" href="#attach-debug" title="永久链接至标题">¶</a></h1>
 <div class="admonition hint">
 <p class="first admonition-title">提示</p>
-<p class="last">附加调试目前只能在 <code class="docutils literal"><span class="pre">Windows</span></code> 平台上使用，可以附加到32位和64位应用程序，因附加调试需将EmmyLua的调试模块 <code class="docutils literal"><span class="pre">LuaInject.dll</span></code> 注入到被调试程序进程中，一些杀毒软件、某卫士可能会弹窗报警告，如果注入过程被拦截则会出现注入失败的错误，导致调试失败。所以一定要选择放行或信任。</p>
+<p class="last">附加调试目前只能在 <code class="docutils literal notranslate"><span class="pre">Windows</span></code> 平台上使用，可以附加到32位和64位应用程序，因附加调试需将EmmyLua的调试模块 <code class="docutils literal notranslate"><span class="pre">LuaInject.dll</span></code> 注入到被调试程序进程中，一些杀毒软件、某卫士可能会弹窗报警告，如果注入过程被拦截则会出现注入失败的错误，导致调试失败。所以一定要选择放行或信任。</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
@@ -191,7 +191,7 @@
 <div class="section" id="id1">
 <h2>1. 执行步骤<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>运行目标程序，打开IDEA菜单 <code class="docutils literal"><span class="pre">Run</span></code> -&gt; <code class="docutils literal"><span class="pre">Attach</span> <span class="pre">to</span> <span class="pre">Local</span> <span class="pre">Process...</span></code></li>
+<li>运行目标程序，打开IDEA菜单 <code class="docutils literal notranslate"><span class="pre">Run</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Attach</span> <span class="pre">to</span> <span class="pre">Local</span> <span class="pre">Process...</span></code></li>
 </ul>
 <img alt="../_images/attach-to-local-process.png" src="../_images/attach-to-local-process.png" />
 <ul class="simple">
@@ -210,15 +210,15 @@
 <div class="section" id="id2">
 <h2>2. 失败相关问题排查<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>断点无效， IDEA控制台窗口出现 <code class="docutils literal"><span class="pre">xxx</span> <span class="pre">not</span> <span class="pre">found</span></code> 日志</li>
+<li>断点无效， IDEA控制台窗口出现 <code class="docutils literal notranslate"><span class="pre">xxx</span> <span class="pre">not</span> <span class="pre">found</span></code> 日志</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">请确认</span> <span class="n">Sources</span> <span class="n">目录设置正确</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">请确认</span> <span class="n">Sources</span> <span class="n">目录设置正确</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li>附加到目标程序失败，出现 <code class="docutils literal"><span class="pre">Error:</span> <span class="pre">LuaInject.dll</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">loaded</span> <span class="pre">into</span> <span class="pre">the</span> <span class="pre">process</span></code></li>
+<li>附加到目标程序失败，出现 <code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">LuaInject.dll</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">loaded</span> <span class="pre">into</span> <span class="pre">the</span> <span class="pre">process</span></code></li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span>检查是否被杀软、安全卫士拦截了注入过程
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>检查是否被杀软、安全卫士拦截了注入过程
 </pre></div>
 </div>
 </div>

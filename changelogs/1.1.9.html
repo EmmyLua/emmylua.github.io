@@ -39,7 +39,7 @@
     <link rel="top" title="EmmyLua for IntelliJ IDEA 1.0 文档" href="../index.html"/>
         <link rel="up" title="Changelogs" href="../changelogs.html"/>
         <link rel="next" title="1.1.8 ( 482c87a )" href="1.1.8.html"/>
-        <link rel="prev" title="1.2.0 ( 0be9824 )" href="1.2.0.html"/> 
+        <link rel="prev" title="1.2.0 ( 59f09a9 )" href="1.2.0.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -100,7 +100,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.2.0.html">1.2.0 ( 0be9824 )</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.2.html">1.2.2 ( 04985b6 )</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.1.html">1.2.1 ( 1816138 )</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.0.html">1.2.0 ( 59f09a9 )</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1.1.9 ( 5aed300 )</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#b2-5aed300">1.1.9b2 ( 5aed300 )</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#b1-8ce698b">1.1.9b1 ( 8ce698b )</a></li>
@@ -178,46 +180,46 @@
 <div class="section" id="b2-5aed300">
 <h2>1.1.9b2 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/5aed3007e1de02bdf6739a9ddccd89ed15d86ac8">5aed300</a> )<a class="headerlink" href="#b2-5aed300" title="永久链接至标题">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">[NEW] 注释可以选择严格模式，即格式写错会报错，默认是容错模式。需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">EmmyLua</span></code> / <code class="docutils literal"><span class="pre">strict</span> <span class="pre">doc</span></code> 中开启</p>
+<li><p class="first">[NEW] 注释可以选择严格模式，即格式写错会报错，默认是容错模式。需在 <code class="docutils literal notranslate"><span class="pre">settings</span></code> / <code class="docutils literal notranslate"><span class="pre">EmmyLua</span></code> / <code class="docutils literal notranslate"><span class="pre">strict</span> <span class="pre">doc</span></code> 中开启</p>
 <blockquote>
 <div><img alt="../_images/doc.png" src="../_images/doc.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 新注解 <code class="docutils literal"><span class="pre">---&#64;language</span></code> 对lua字符串可进入代码注入(language injector)</p>
+<li><p class="first">[NEW] 新注解 <code class="docutils literal notranslate"><span class="pre">---&#64;language</span></code> 对lua字符串可进入代码注入(language injector)</p>
 <blockquote>
 <div><img alt="../_images/language.png" src="../_images/language.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 新注解 <code class="docutils literal"><span class="pre">---&#64;overload</span></code> 用于标注重载</p>
+<li><p class="first">[NEW] 新注解 <code class="docutils literal notranslate"><span class="pre">---&#64;overload</span></code> 用于标注重载</p>
 <blockquote>
 <div><img alt="../_images/overload.png" src="../_images/overload.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 新注解 <code class="docutils literal"><span class="pre">---&#64;module</span></code> 用于兼容 <code class="docutils literal"><span class="pre">module()</span></code> 方式创建的模块（不建议使用）</p>
+<li><p class="first">[NEW] 新注解 <code class="docutils literal notranslate"><span class="pre">---&#64;module</span></code> 用于兼容 <code class="docutils literal notranslate"><span class="pre">module()</span></code> 方式创建的模块（不建议使用）</p>
 </li>
-<li><p class="first">[NEW] 在方法上显示分割线(line separator)，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">method</span> <span class="pre">separators</span></code> 中开启</p>
+<li><p class="first">[NEW] 在方法上显示分割线(line separator)，需在 <code class="docutils literal notranslate"><span class="pre">settings</span></code> / <code class="docutils literal notranslate"><span class="pre">editor</span></code> / <code class="docutils literal notranslate"><span class="pre">general</span></code> / <code class="docutils literal notranslate"><span class="pre">appearance</span></code> / <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">method</span> <span class="pre">separators</span></code> 中开启</p>
 <blockquote>
 <div><img alt="../_images/class_method_line.png" src="../_images/class_method_line.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 可显示本地变量（local variable）变量类型，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal"><span class="pre">Show</span> <span class="pre">local</span> <span class="pre">variable</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
+<li><p class="first">[NEW] 可显示本地变量（local variable）变量类型，需在 <code class="docutils literal notranslate"><span class="pre">settings</span></code> / <code class="docutils literal notranslate"><span class="pre">editor</span></code> / <code class="docutils literal notranslate"><span class="pre">general</span></code> / <code class="docutils literal notranslate"><span class="pre">appearance</span></code> / <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">local</span> <span class="pre">variable</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
 <blockquote>
 <div><img alt="../_images/local_var_type_hint.png" src="../_images/local_var_type_hint.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 可显示形参（parameter）类型，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal"><span class="pre">Show</span> <span class="pre">parameter</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
+<li><p class="first">[NEW] 可显示形参（parameter）类型，需在 <code class="docutils literal notranslate"><span class="pre">settings</span></code> / <code class="docutils literal notranslate"><span class="pre">editor</span></code> / <code class="docutils literal notranslate"><span class="pre">general</span></code> / <code class="docutils literal notranslate"><span class="pre">appearance</span></code> / <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">parameter</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
 <blockquote>
 <div><img alt="../_images/param_type_hint.png" src="../_images/param_type_hint.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW] 可显示函数返回值（return）类型，需在 <code class="docutils literal"><span class="pre">settings</span></code> / <code class="docutils literal"><span class="pre">editor</span></code> / <code class="docutils literal"><span class="pre">general</span></code> / <code class="docutils literal"><span class="pre">appearance</span></code> / <code class="docutils literal"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal"><span class="pre">Show</span> <span class="pre">function</span> <span class="pre">return</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
+<li><p class="first">[NEW] 可显示函数返回值（return）类型，需在 <code class="docutils literal notranslate"><span class="pre">settings</span></code> / <code class="docutils literal notranslate"><span class="pre">editor</span></code> / <code class="docutils literal notranslate"><span class="pre">general</span></code> / <code class="docutils literal notranslate"><span class="pre">appearance</span></code> / <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">parameter</span> <span class="pre">name</span> <span class="pre">hints#configure</span></code> / <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">function</span> <span class="pre">return</span> <span class="pre">type</span> <span class="pre">hints</span></code> 中开启</p>
 <blockquote>
 <div><img alt="../_images/function_ret_type_hint.png" src="../_images/function_ret_type_hint.png" />
 </div></blockquote>
 </li>
 <li><p class="first">[FIX] <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/issues/41">issue 41</a></p>
 </li>
-<li><p class="first">[IMPROVE] 在关键字如 <code class="docutils literal"><span class="pre">local,</span> <span class="pre">function</span> <span class="pre">...</span></code> 代码完成时自动在其后添加空格</p>
+<li><p class="first">[IMPROVE] 在关键字如 <code class="docutils literal notranslate"><span class="pre">local,</span> <span class="pre">function</span> <span class="pre">...</span></code> 代码完成时自动在其后添加空格</p>
 </li>
 <li><p class="first">[IMPROVE] 改进Quick Documentation</p>
 </li>
@@ -230,9 +232,9 @@
 <div class="section" id="b1-8ce698b">
 <h2>1.1.9b1 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/8ce698be1802f4430e1e0c3995731b9ada833f3b">8ce698b</a> )<a class="headerlink" href="#b1-8ce698b" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
-<li>[NEW] 从构造函数推断类型，如 <code class="docutils literal"><span class="pre">local</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">xxx.new()</span></code> ， <code class="docutils literal"><span class="pre">a</span></code> 将被推断为 <code class="docutils literal"><span class="pre">xxx</span></code> 的类型，并可以设置自定义构造函数名</li>
-<li>[FIX] 修复在文件尾输入 <code class="docutils literal"><span class="pre">--[</span></code> 崩溃的BUG</li>
-<li>[NEW] 为Lua5.3的 <code class="docutils literal"><span class="pre">goto</span></code> 完善跳转和代码提示</li>
+<li>[NEW] 从构造函数推断类型，如 <code class="docutils literal notranslate"><span class="pre">local</span> <span class="pre">a</span> <span class="pre">=</span> <span class="pre">xxx.new()</span></code> ， <code class="docutils literal notranslate"><span class="pre">a</span></code> 将被推断为 <code class="docutils literal notranslate"><span class="pre">xxx</span></code> 的类型，并可以设置自定义构造函数名</li>
+<li>[FIX] 修复在文件尾输入 <code class="docutils literal notranslate"><span class="pre">--[</span></code> 崩溃的BUG</li>
+<li>[NEW] 为Lua5.3的 <code class="docutils literal notranslate"><span class="pre">goto</span></code> 完善跳转和代码提示</li>
 <li>[NEW] 增加inspection，同名的local定义将出现同名警告</li>
 </ol>
 </div>
@@ -260,7 +262,7 @@
         <a href="1.1.8.html" class="btn btn-neutral float-right" title="1.1.8 ( 482c87a )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="1.2.0.html" class="btn btn-neutral" title="1.2.0 ( 0be9824 )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="1.2.0.html" class="btn btn-neutral" title="1.2.0 ( 59f09a9 )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

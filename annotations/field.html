@@ -181,21 +181,21 @@
 <h1>&#64;field 属性注解<a class="headerlink" href="#field" title="永久链接至标题">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
-<p class="last">利用 <code class="docutils literal"><span class="pre">&#64;field</span></code> 注解来标记某个类的额外的属性（即使这个属性没有出现在代码里）</p>
+<p class="last">利用 <code class="docutils literal notranslate"><span class="pre">&#64;field</span></code> 注解来标记某个类的额外的属性（即使这个属性没有出现在代码里）</p>
 </div>
 <ul class="simple">
 <li>完整格式：</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@field</span> <span class="p">[</span><span class="n">public</span><span class="o">|</span><span class="n">protected</span><span class="o">|</span><span class="n">private</span><span class="p">]</span> <span class="n">field_name</span> <span class="n">FIELD_TYPE</span><span class="p">[</span><span class="o">|</span><span class="n">OTHER_TYPE</span><span class="p">]</span> <span class="p">[</span><span class="nd">@comment</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@field</span> <span class="p">[</span><span class="n">public</span><span class="o">|</span><span class="n">protected</span><span class="o">|</span><span class="n">private</span><span class="p">]</span> <span class="n">field_name</span> <span class="n">FIELD_TYPE</span><span class="p">[</span><span class="o">|</span><span class="n">OTHER_TYPE</span><span class="p">]</span> <span class="p">[</span><span class="nd">@comment</span><span class="p">]</span>
 </pre></div>
 </div>
 <ul>
 <li><p class="first">应用目标：</p>
 <blockquote>
 <div><ul class="simple">
-<li>在 <code class="docutils literal"><span class="pre">&#64;class</span></code> 注解之后</li>
+<li>在 <code class="docutils literal notranslate"><span class="pre">&#64;class</span></code> 注解之后</li>
 </ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">---@class Car</span>
 <span class="hll"><span class="c1">---@field public name string @标记Car有一个name属性，代码提示中会出现相应提示</span>

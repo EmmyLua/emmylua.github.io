@@ -188,11 +188,11 @@
 <div class="section" id="id1">
 <h2>1. 执行步骤<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li>配置Remote调试设置，点击右上角 <code class="docutils literal"><span class="pre">Edit</span> <span class="pre">Configurations</span></code></li>
+<li>配置Remote调试设置，点击右上角 <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">Configurations</span></code></li>
 </ul>
 <img alt="../_images/debug-config.png" src="../_images/debug-config.png" />
 <ul class="simple">
-<li>点击 <code class="docutils literal"><span class="pre">+</span></code> 选择并创建 <code class="docutils literal"><span class="pre">Lua</span> <span class="pre">Remote(Mobdebug)</span></code> 配置</li>
+<li>点击 <code class="docutils literal notranslate"><span class="pre">+</span></code> 选择并创建 <code class="docutils literal notranslate"><span class="pre">Lua</span> <span class="pre">Remote(Mobdebug)</span></code> 配置</li>
 </ul>
 <img alt="../_images/debug-config2.png" src="../_images/debug-config2.png" />
 <ul class="simple">
@@ -208,13 +208,13 @@
 </ul>
 <img alt="../_images/debug-config5.png" src="../_images/debug-config5.png" />
 <ul class="simple">
-<li>下载 <code class="docutils literal"><span class="pre">mobdebug.lua</span></code> 并在目标程序的lua代码入口处添加代码</li>
+<li>下载 <code class="docutils literal notranslate"><span class="pre">mobdebug.lua</span></code> 并在目标程序的lua代码入口处添加代码</li>
 </ul>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;mobdebug&quot;</span><span class="p">).</span><span class="n">start</span><span class="p">()</span>
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;mobdebug&quot;</span><span class="p">).</span><span class="n">start</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></div>
 <p>或者</p>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;mobdebug&quot;</span><span class="p">).</span><span class="n">start</span><span class="p">(</span><span class="s2">&quot;host-ip&quot;</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span> <span class="c1">--默认值为 &quot;localhost&quot;, 8172</span>
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;mobdebug&quot;</span><span class="p">).</span><span class="n">start</span><span class="p">(</span><span class="s2">&quot;host-ip&quot;</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span> <span class="c1">--默认值为 &quot;localhost&quot;, 8172</span>
 </pre></div>
 </td></tr></table></div>
 <ul class="simple">
@@ -233,18 +233,18 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">Connected</span></code> 日志有，但断点无效</p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">Connected</span></code> 日志有，但断点无效</p>
 <blockquote>
 <div><ul>
-<li><p class="first">检查 <code class="docutils literal"><span class="pre">Sources</span></code> 目录设置正确</p>
+<li><p class="first">检查 <code class="docutils literal notranslate"><span class="pre">Sources</span></code> 目录设置正确</p>
 </li>
 <li><p class="first">检查目标程序在运行时提供的文件名与源码文件的文件名一致（致少除了后缀名的前面的部分一致）</p>
 <blockquote>
-<div><p>此项检查快捷方式是在 <code class="docutils literal"><span class="pre">mobdebug.lua</span></code> 的</p>
-<div class="highlight-lua"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="kr">function</span> <span class="nf">has_breakpoint</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+<div><p>此项检查快捷方式是在 <code class="docutils literal notranslate"><span class="pre">mobdebug.lua</span></code> 的</p>
+<div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="kr">function</span> <span class="nf">has_breakpoint</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p>函数中打印输出 <code class="docutils literal"><span class="pre">file</span></code></p>
+<p>函数中打印输出 <code class="docutils literal notranslate"><span class="pre">file</span></code></p>
 </div></blockquote>
 </li>
 </ul>
