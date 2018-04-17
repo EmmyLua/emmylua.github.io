@@ -1,1 +1,1 @@
-sphinx-build . ../
+python -m sphinx . ../
