@@ -3,9 +3,9 @@
 Run And Debug
 =============
 
-.. 1. 准备
+.. 准备
 
-1. Get ready
+Get ready
 --------------
 
 .. note::
@@ -16,8 +16,8 @@ Run And Debug
 
 .. image:: images/debug/project-structure.png
 
-2. 开始调试
--------------
+Start debugging
+---------------
 
 .. toctree::
 

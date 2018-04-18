@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 18:55+0800\n"
+"POT-Creation-Date: 2018-04-18 09:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,6 +66,14 @@ msgstr ""
 
 #: ../postfix/if_nil.rst:5
 msgid "Generate ``if expr == nil then end`` statment."
+msgstr ""
+
+#: ../postfix/if_not.rst:2
+msgid "if_not"
+msgstr ""
+
+#: ../postfix/if_not.rst:5
+msgid "Generate  ``if not expr then end`` statment."
 msgstr ""
 
 #: ../postfix/if_not_nil.rst:2

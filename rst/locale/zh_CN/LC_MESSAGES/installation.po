@@ -9,24 +9,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-07 17:23+0800\n"
+"POT-Creation-Date: 2018-04-18 09:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.3\n"
 
 #: ../installation.rst:2
 msgid "Installation"
 msgstr "安装"
 
-#: ../installation.rst:5
+#: ../installation.rst:4
+msgid ""
+"``EmmyLua`` 是 `Jetbrains <https://www.jetbrains.com>`__ 产品家族的插件，使用 "
+"``EmmyLua`` 之前请先安装 `Jetbrains <https://www.jetbrains.com>`__ IDE（建议使用 "
+"`IntelliJ IDEA Community "
+"<https://www.jetbrains.com/idea/download>`__），再用安装插件的方式将 ``EmmyLua`` "
+"安装到IDE中使用"
+msgstr ""
+
+#: ../installation.rst:7
 msgid ""
 "EmmyLua can be install on all product of `Jetbrains "
 "<https://www.jetbrains.com/>`_, Requires version ``2017.1`` or above."
-msgstr "EmmyLua可安装在所有 `Jetbrains <https://www.jetbrains.com/>`_ 产品中，要求版本 ``2017.1`` 及以上"
+msgstr ""
+"EmmyLua可安装在所有 `Jetbrains <https://www.jetbrains.com/>`_ 产品中，要求版本 "
+"``2017.1`` 及以上"
+
+#: ../installation.rst:9
+msgid "``EmmyLua`` 插件安装方式"
+msgstr ""
 
 #: ../installation/repo.rst:4
 msgid "via JetBrains Plugin Repository"
