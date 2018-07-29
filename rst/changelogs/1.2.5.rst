@@ -11,6 +11,9 @@
 
 3. [NEW]泛型支持 ``@generic`` 注解
 
+    .. seealso::
+        :ref:`ann_generic`
+
     .. image:: 1.2.5/generic.png
 
 4. [NEW]新增 Lua5.4 API (感谢来自 @dsmgit 的贡献)

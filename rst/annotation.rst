@@ -17,6 +17,7 @@ EmmyLua use ``annotation`` to improve code completions and other features.
     annotations/param
     annotations/return
     annotations/field
+    annotations/generic
     annotations/language
     annotations/array
     annotations/dict
