@@ -1,0 +1,32 @@
+1.2.5 ( `971d001 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/971d001165305468986044654f368b326afa2ce0>`__ )
+==================================================================================================================
+
+1. [IMPRO] 为 ``IDEA2018.2`` 新设计的 Documentation 视图
+
+    .. image:: 1.2.5/redesigned_documentation.png
+
+2. 新增 ``@deprecated`` ``@author`` ``@version`` ``@since`` 注解
+
+    .. image:: 1.2.5/new_tags.png
+
+3. 泛型支持 ``@generic`` 注解
+
+    .. image:: 1.2.5/generic.png
+
+4. 新增 Lua5.4 API (感谢来自 @dsmgit 的贡献)
+
+5. 新增Lua版本选择项，请在 ``File | Settings | Languages & Frameworks | EmmyLua`` 中设置，默认为 ``Lua5.3``。不同的level对应不同的stdlib和语法
+
+    .. image:: 1.2.5/level_1.png
+
+    .. image:: 1.2.5/level_2.png
+
+6. Attach debugger 现在可以捕获目标程序使用 ``OutputDebugString`` 的输出信息
+
+7. 同时适配 ``IDEA2017.1``, ``IDEA2017.2-IDEA2018.1``, ``IDEA2018.2``
+
+8. 优化 ``Remote debugger``
+
+9. 更新 ``EmmyDoc Tutorial``
+
+10. bug fix #145 #165 #167 #169 ...
