@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../donate.rst:2
 msgid "捐赠/Donate"
-msgstr ""
+msgstr "捐赠"
 
