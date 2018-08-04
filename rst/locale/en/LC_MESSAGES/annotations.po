@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, tangzx(love.tangzx@qq.com)
+# This file is distributed under the same license as the EmmyLua for
+# IntelliJ IDEA package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-04 16:48+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../annotations/array.rst:4
+msgid "array type"
+msgstr ""
+
+#: ../annotations/array.rst:7
+msgid "Use ``MY_TYPE[]`` to specify that a variable's type is an array type"
+msgstr ""
+
+#: ../annotations/array.rst:9 ../annotations/class.rst:11
+#: ../annotations/dict.rst:9 ../annotations/field.rst:8
+#: ../annotations/language.rst:9 ../annotations/param.rst:10
+#: ../annotations/return.rst:10 ../annotations/type.rst:11
+msgid "Full format:"
+msgstr ""
+
+#: ../annotations/array.rst:15 ../annotations/class.rst:22
+#: ../annotations/dict.rst:15 ../annotations/fun.rst:15
+#: ../annotations/generic.rst:19
+msgid "Examples:"
+msgstr ""
+
+#: ../annotations/array.rst:32 ../annotations/class.rst:39
+#: ../annotations/dict.rst:32 ../annotations/fun.rst:35
+msgid ":ref:`ann_type`"
+msgstr ""
+
+#: ../annotations/class.rst:4
+msgid "@class class declaration annotation"
+msgstr ""
+
+#: ../annotations/class.rst:7
+msgid ""
+"EmmyLua use ``@class`` to simulate classes in OOP, supporting inheritance"
+" and fields"
+msgstr ""
+
+#: ../annotations/class.rst:17 ../annotations/field.rst:14
+#: ../annotations/generic.rst:15 ../annotations/param.rst:16
+#: ../annotations/return.rst:16 ../annotations/type.rst:18
+msgid "Target:"
+msgstr ""
+
+#: ../annotations/class.rst:19 ../annotations/type.rst:20
+msgid "local variables"
+msgstr ""
+
+#: ../annotations/class.rst:20 ../annotations/type.rst:33
+msgid "global variables"
+msgstr ""
+
+#: ../annotations/class.rst:34
+msgid "Descriptions:"
+msgstr ""
+
+#: ../annotations/class.rst:36
+msgid ""
+"Sepcifies variable ``cls`` is class ``Car``, so we can use ``@type`` to "
+"specify other variables' types as Car, which can improve completion and "
+"other functionality."
+msgstr ""
+
+#: ../annotations/dict.rst:4
+msgid "table type"
+msgstr ""
+
+#: ../annotations/dict.rst:7
+msgid ""
+"Use ``table<KEY_TYPE, VALUE_TYPE>`` to specify that a variable's type is "
+"a table(a.k.a. dictionary, map) type"
+msgstr ""
+
+#: ../annotations/example.rst:2
+msgid "Full examples"
+msgstr ""
+
+#: ../annotations/field.rst:2
+msgid "@field field annotation"
+msgstr ""
+
+#: ../annotations/field.rst:6
+msgid ""
+"Use ``@field`` to add extra fields to an existing class (even it doesn't "
+"appear in your code)"
+msgstr ""
+
+#: ../annotations/field.rst:16
+msgid "After ``@class`` annotations"
+msgstr ""
+
+#: ../annotations/field.rst:28 ../annotations/type.rst:53
+msgid ":ref:`ann_class`"
+msgstr ""
+
+#: ../annotations/fun.rst:4
+msgid "function types"
+msgstr ""
+
+#: ../annotations/fun.rst:7
+msgid ""
+"Use ``fun(param:MY_TYPE):RETURN_TYPE`` to specify that a variable's type "
+"is a function type"
+msgstr ""
+
+#: ../annotations/fun.rst:9 ../annotations/generic.rst:9
+msgid "Full format"
+msgstr ""
+
+#: ../annotations/generic.rst:4
+msgid "@generic generic annotation"
+msgstr ""
+
+#: ../annotations/generic.rst:7
+msgid "Use ``@generic`` to simulate ``generic`` in some high-level languages"
+msgstr ""
+
+#: ../annotations/generic.rst:17
+msgid "function"
+msgstr ""
+
+#: ../annotations/language.rst:4
+msgid "@language language injection"
+msgstr ""
+
+#: ../annotations/language.rst:7
+msgid "Use ``@language`` to inject syntax highlight to a piece of text"
+msgstr ""
+
+#: ../annotations/language.rst:15
+msgid "Example:"
+msgstr ""
+
+#: ../annotations/language.rst:26
+msgid "Screenshot:"
+msgstr ""
+
+#: ../annotations/param.rst:2
+msgid "@param parameter type annotation"
+msgstr ""
+
+#: ../annotations/param.rst:6
+msgid ""
+"Use ``@param`` to specify the types of function parameters, to improve "
+"completions and other functionality."
+msgstr ""
+
+#: ../annotations/param.rst:18
+msgid "function parameters"
+msgstr ""
+
+#: ../annotations/param.rst:38
+msgid "for loop variables"
+msgstr ""
+
+#: ../annotations/return.rst:2
+msgid "@return function return type annotation"
+msgstr ""
+
+#: ../annotations/return.rst:6
+msgid "Use ``@return`` to specify the return type of a function"
+msgstr ""
+
+#: ../annotations/return.rst:18
+msgid "functions"
+msgstr ""
+
+#: ../annotations/see.rst:4
+msgid "@see references"
+msgstr ""
+
+#: ../annotations/see.rst:7
+msgid "Use ``see`` to specify a reference"
+msgstr ""
+
+#: ../annotations/type.rst:4
+msgid "@type type annotation"
+msgstr ""
+
+#: ../annotations/type.rst:7
+msgid ""
+"Use ``@type`` annotation to specify the type of the target variable, to "
+"improve completions and other functionality."
+msgstr ""
+
+#: ../annotations/type.rst:42
+msgid "properties"
+msgstr ""
+

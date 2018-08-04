@@ -2,7 +2,7 @@
 # Copyright (C) 2017, tangzx(love.tangzx@qq.com)
 # This file is distributed under the same license as the EmmyLua for
 # IntelliJ IDEA package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 #, fuzzy
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../installation.rst:2
 msgid "Installation"
-msgstr "安装"
+msgstr ""
 
 #: ../installation.rst:6
 msgid ""
@@ -30,89 +30,74 @@ msgid ""
 "Community <https://www.jetbrains.com/idea/download>`__), and then install"
 " ``EmmyLua`` plugin to your IDE."
 msgstr ""
-"``EmmyLua`` 是 `Jetbrains "
-"<https://www.jetbrains.com>`__ 产品家族的插件，使用 ``EmmyLua`` "
-"之前请先安装 `Jetbrains <https://www.jetbrains.com>`__ "
-"IDE（建议使用 `IntelliJ IDEA Community "
-"<https://www.jetbrains.com/idea/download>`__），再用安装插件的方式将 "
-"``EmmyLua`` 安装到IDE中使用"
 
 #: ../installation.rst:9
 msgid ""
 "EmmyLua can be installed to all products of `Jetbrains "
 "<https://www.jetbrains.com/>`_, Requires version ``2017.1`` or above."
 msgstr ""
-"EmmyLua可安装在所有 `Jetbrains <https://www.jetbrains.com/>`_ 产品中，要求版本 "
-"``2017.1`` 及以上"
 
 #: ../installation.rst:13
 msgid "How to install ``EmmyLua`` plugin."
-msgstr "``EmmyLua`` 插件安装方式"
+msgstr ""
 
 #: ../installation/repo.rst:4
 msgid "via JetBrains Plugin Repository"
-msgstr "从插件仓库安装"
+msgstr ""
 
 #: ../installation/repo.rst:8
-#, fuzzy
 msgid "Open ``settings`` panel."
-msgstr "打开 ``settings`` 面板"
+msgstr ""
 
 #: ../installation/repo.rst:14
-#, fuzzy
 msgid "Select ``plugins`` and click ``Browse repositories``"
-msgstr "选择 ``plugins`` 选项并点击 ``Browse repositories``"
+msgstr ""
 
 #: ../installation/repo.rst:20
 msgid "Search ``EmmyLua`` and click ``Install``."
-msgstr "搜索 ``EmmyLua`` 并点击 ``Install`` 安装"
+msgstr ""
 
 #: ../installation/repo.rst:26
 msgid "Restart IDEA after installation complete."
-msgstr "安装完毕重启IDEA"
+msgstr ""
 
 #: ../installation/zip.rst:2
 msgid "via Zip file"
-msgstr "从zip文件安装"
+msgstr ""
 
 #: ../installation/zip.rst:4
 msgid "Download zip file."
-msgstr "下载zip文件"
+msgstr ""
 
 #: ../installation/zip.rst:6
 msgid ""
 "via `JetBrains Plugin Repository "
 "<https://plugins.jetbrains.com/plugin/9768-emmylua>`_"
 msgstr ""
-"从 `JetBrains Plugin Repository "
-"<https://plugins.jetbrains.com/plugin/9768-emmylua>`__ 下载"
 
 #: ../installation/zip.rst:7
 msgid ""
 "via `Github release page <https://github.com/tangzx/IntelliJ-"
 "EmmyLua/releases>`_"
 msgstr ""
-"从 `Github release page <https://github.com/tangzx/IntelliJ-"
-"EmmyLua/releases>`_ 下载(可能不是最新版本)"
 
 #: ../installation/zip.rst:8
 msgid "via QQ group: ``29850775`` (for chinese)"
-msgstr "从QQ群文件下载(最新版首先在群内发布测试，群号：``29850775`` )"
+msgstr ""
 
 #: ../installation/zip.rst:11
 msgid "Don't unzip file."
-msgstr "无需解压Zip文件"
+msgstr ""
 
 #: ../installation/zip.rst:13
 msgid ""
 "Select menu item ``File`` -> ``Settings`` -> ``Plugins`` -> ``Install "
 "plugin from disk``"
 msgstr ""
-"选择菜单 ``File`` -> ``Settings`` -> ``Plugins`` -> ``Install plugin from "
-"disk``"
 
 #: ../installation/zip.rst:15
 msgid ""
 "Select the downloaded EmmyLua.zip file, and restart IDEA after "
 "installation complete."
-msgstr "选择刚下载的EmmyLua.zip文件，安装完毕重启IDEA"
+msgstr ""
+

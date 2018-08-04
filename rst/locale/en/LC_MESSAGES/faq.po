@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, tangzx(love.tangzx@qq.com)
+# This file is distributed under the same license as the EmmyLua for
+# IntelliJ IDEA package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-18 09:27+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../faq.rst:2
+msgid "FAQ"
+msgstr ""
+
+#: ../faq.rst:5
+msgid "**问**：EmmyLua可以安装在IDEA其它的产品上吗？如PyCharm, PhpStorm..."
+msgstr ""
+
+#: ../faq.rst:7
+msgid "可以，EmmyLua可以安装在所有IDEA产品上，但最好还是安装在IDEA上（推荐社区免费版）"
+msgstr ""
+
+#: ../faq.rst:10
+msgid "**问**：安装EmmyLua失败，出现这个怎么解决？"
+msgstr ""
+
+#: ../faq.rst:14
+msgid "IDEA版本太旧。``EmmyLua`` 要求 ``IDEA 2017.1`` 及以上版本"
+msgstr ""
+
+#: ../faq.rst:17
+msgid "**问**：附加调试不稳定，经常崩溃怎么办？"
+msgstr ""
+
+#: ../faq.rst:19
+msgid "的确，目前Attach Debug方式不太稳定，经常收到崩溃的反馈。"
+msgstr ""
+
+#: ../faq.rst:21
+msgid ""
+"``Attach Debug`` 是基于 ``Decoda`` "
+"的用C/C++写成的调试内核，出了问题比较难查，关键是我这里没有重现的环境（我自己调试Unity项目一切正常...），再加上个人时间与精力有限，所以这块的BUG修复进展不理想，如果经常崩溃建议大家还是暂时转用"
+" ``Remote debug`` 方式来调试。"
+msgstr ""
+
