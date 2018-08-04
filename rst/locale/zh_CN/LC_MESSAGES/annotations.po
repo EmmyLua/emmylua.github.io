@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 09:27+0800\n"
+"POT-Creation-Date: 2018-08-04 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,25 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 
 #: ../annotations/array.rst:4
-msgid "数组类型"
-msgstr ""
+msgid "array type"
+msgstr "数组类型"
 
 #: ../annotations/array.rst:7
-msgid "可以利用 ``MY_TYPE[]`` 的方式来标注一个数据类型为数组"
-msgstr ""
+msgid "Use ``MY_TYPE[]`` to specify that a variable's type is an array type"
+msgstr "可以利用 ``MY_TYPE[]`` 的方式来标注一个数据类型为数组"
 
-#: ../annotations/array.rst:9 ../annotations/dict.rst:9
-#: ../annotations/field.rst:8 ../annotations/fun.rst:9
+#: ../annotations/array.rst:9 ../annotations/class.rst:11
+#: ../annotations/dict.rst:9 ../annotations/field.rst:8
 #: ../annotations/language.rst:9 ../annotations/param.rst:10
 #: ../annotations/return.rst:10 ../annotations/type.rst:11
-msgid "完整格式："
-msgstr ""
+msgid "Full format:"
+msgstr "完整格式："
 
 #: ../annotations/array.rst:15 ../annotations/class.rst:22
 #: ../annotations/dict.rst:15 ../annotations/fun.rst:15
-#: ../annotations/language.rst:15
-msgid "示例："
-msgstr ""
+#: ../annotations/generic.rst:19
+msgid "Examples:"
+msgstr "示例："
 
 #: ../annotations/array.rst:32 ../annotations/class.rst:39
 #: ../annotations/dict.rst:32 ../annotations/fun.rst:35
@@ -45,132 +45,162 @@ msgid ":ref:`ann_type`"
 msgstr ""
 
 #: ../annotations/class.rst:4
-msgid "@class类声明注解"
-msgstr ""
+msgid "@class class declaration annotation"
+msgstr "@class类声明注解"
 
 #: ../annotations/class.rst:7
-msgid "EmmyLua利用 ``@class`` 注解来模拟面向对象中的类，可以继承，可以定义字段/属性"
-msgstr ""
-
-#: ../annotations/class.rst:11
-msgid "完整格式"
-msgstr ""
+msgid ""
+"EmmyLua use ``@class`` to simulate classes in OOP, supporting inheritance"
+" and fields"
+msgstr "EmmyLua利用 ``@class`` 注解来模拟面向对象中的类，可以继承，可以定义字段/属性"
 
 #: ../annotations/class.rst:17 ../annotations/field.rst:14
-#: ../annotations/param.rst:16 ../annotations/return.rst:16
-#: ../annotations/type.rst:18
-msgid "应用目标："
-msgstr ""
+#: ../annotations/generic.rst:15 ../annotations/param.rst:16
+#: ../annotations/return.rst:16 ../annotations/type.rst:18
+msgid "Target:"
+msgstr "应用目标："
 
 #: ../annotations/class.rst:19 ../annotations/type.rst:20
-msgid "local 变量"
-msgstr ""
+msgid "local variables"
+msgstr "local 变量"
 
 #: ../annotations/class.rst:20 ../annotations/type.rst:33
-msgid "global 变量"
-msgstr ""
+msgid "global variables"
+msgstr "global 变量"
 
 #: ../annotations/class.rst:34
-msgid "示例说明："
-msgstr ""
+msgid "Descriptions:"
+msgstr "示例说明："
 
 #: ../annotations/class.rst:36
-msgid "将 ``cls`` 变量标记为 ``Car`` 类，在其它地方可以使用 ``@type`` 注解来标记目标变量类型，以增强代码提示以及其它功能"
-msgstr ""
+msgid ""
+"Sepcifies variable ``cls`` is class ``Car``, so we can use ``@type`` to "
+"specify other variables' types as Car, which can improve completion and "
+"other functionality."
+msgstr "将 ``cls`` 变量标记为 ``Car`` 类，在其它地方可以使用 ``@type`` 注解来标记目标变量类型，以增强代码提示以及其它功能"
 
 #: ../annotations/dict.rst:4
-msgid "字典类型"
-msgstr ""
+msgid "table type"
+msgstr "字典类型"
 
 #: ../annotations/dict.rst:7
-msgid "可以利用 ``table<KEY_TYPE, VALUE_TYPE>`` 的方式来标注一个数据类型为字典"
-msgstr ""
+msgid ""
+"Use ``table<KEY_TYPE, VALUE_TYPE>`` to specify that a variable's type is "
+"a table(a.k.a. dictionary, map) type"
+msgstr "可以利用 ``table<KEY_TYPE, VALUE_TYPE>`` 的方式来标注一个数据类型为字典"
 
 #: ../annotations/example.rst:2
-msgid "完整示例"
-msgstr ""
+msgid "Full examples"
+msgstr "完整示例"
 
 #: ../annotations/field.rst:2
-msgid "@field 属性注解"
-msgstr ""
+msgid "@field field annotation"
+msgstr "@field 属性注解"
 
 #: ../annotations/field.rst:6
-msgid "利用 ``@field`` 注解来标记某个类的额外的属性（即使这个属性没有出现在代码里）"
-msgstr ""
+msgid ""
+"Use ``@field`` to add extra fields to an existing class (even it doesn't "
+"appear in your code)"
+msgstr "利用 ``@field`` 注解来标记某个类的额外的属性（即使这个属性没有出现在代码里）"
 
 #: ../annotations/field.rst:16
-msgid "在 ``@class`` 注解之后"
-msgstr ""
+msgid "After ``@class`` annotations"
+msgstr "在 ``@class`` 注解之后"
 
 #: ../annotations/field.rst:28 ../annotations/type.rst:53
 msgid ":ref:`ann_class`"
 msgstr ""
 
 #: ../annotations/fun.rst:4
-msgid "函数类型"
-msgstr ""
+msgid "function types"
+msgstr "函数类型"
 
 #: ../annotations/fun.rst:7
-msgid "可以利用 ``fun(param:MY_TYPE):RETURN_TYPE`` 的方式来标注一个数据类型为函数"
+msgid ""
+"Use ``fun(param:MY_TYPE):RETURN_TYPE`` to specify that a variable's type "
+"is a function type"
+msgstr "可以利用 ``fun(param:MY_TYPE):RETURN_TYPE`` 的方式来标注一个数据类型为函数"
+
+#: ../annotations/fun.rst:9 ../annotations/generic.rst:9
+msgid "Full format"
+msgstr "完整格式："
+
+#: ../annotations/generic.rst:4
+msgid "@generic generic annotation"
+msgstr "@generic 泛型注解"
+
+#: ../annotations/generic.rst:7
+msgid "Use ``@generic`` to simulate ``generic`` in some high-level languages"
+msgstr "利用 ``@generic`` 注解来模拟高级语言中的 ``泛型``"
+
+#: ../annotations/generic.rst:17
+msgid "function"
 msgstr ""
 
 #: ../annotations/language.rst:4
-msgid "@language内嵌语言"
-msgstr ""
+msgid "@language language injection"
+msgstr "@language内嵌语言"
 
 #: ../annotations/language.rst:7
-msgid "可以利用 ``@language`` 的方式来标注一段文本为某种代码格式，从而可以显示高亮"
-msgstr ""
+msgid "Use ``@language`` to inject syntax highlight to a piece of text"
+msgstr "可以利用 ``@language`` 的方式来标注一段文本为某种代码格式，从而可以显示高亮"
+
+#: ../annotations/language.rst:15
+msgid "Example:"
+msgstr "示例："
 
 #: ../annotations/language.rst:26
-msgid "效果："
-msgstr ""
+msgid "Screenshot:"
+msgstr "效果："
 
 #: ../annotations/param.rst:2
-msgid "@param参数类型标记注解"
-msgstr ""
+msgid "@param parameter type annotation"
+msgstr "@param参数类型标记注解"
 
 #: ../annotations/param.rst:6
-msgid "利用 ``@param`` 注解来标记函数定义参数的类型，以增强代码提示以及其它功能"
-msgstr ""
+msgid ""
+"Use ``@param`` to specify the types of function parameters, to improve "
+"completions and other functionality."
+msgstr "利用 ``@param`` 注解来标记函数定义参数的类型，以增强代码提示以及其它功能"
 
 #: ../annotations/param.rst:18
-msgid "函数参数"
-msgstr ""
+msgid "function parameters"
+msgstr "函数参数"
 
 #: ../annotations/param.rst:38
-msgid "for循环参数"
-msgstr ""
+msgid "for loop variables"
+msgstr "for循环参数"
 
 #: ../annotations/return.rst:2
-msgid "@return 函数返回值注解"
-msgstr ""
+msgid "@return function return type annotation"
+msgstr "@return 函数返回值注解"
 
 #: ../annotations/return.rst:6
-msgid "利用 ``@return`` 注解来标记函数的返回值类型"
-msgstr ""
+msgid "Use ``@return`` to specify the return type of a function"
+msgstr "利用 ``@return`` 注解来标记函数的返回值类型"
 
 #: ../annotations/return.rst:18
-msgid "函数"
-msgstr ""
+msgid "functions"
+msgstr "函数"
 
 #: ../annotations/see.rst:4
-msgid "@see 引用"
-msgstr ""
+msgid "@see references"
+msgstr "@see 引用"
 
 #: ../annotations/see.rst:7
-msgid "可以利用 ``see`` 的注解来标注一个引用"
-msgstr ""
+msgid "Use ``see`` to specify a reference"
+msgstr "可以利用 ``see`` 的注解来标注一个引用"
 
 #: ../annotations/type.rst:4
-msgid "@type类型标记注解"
-msgstr ""
+msgid "@type type annotation"
+msgstr "@type类型标记注解"
 
 #: ../annotations/type.rst:7
-msgid "利用 ``@type`` 注解来标记目标变量的类型，以增强代码提示以及其它功能"
-msgstr ""
+msgid ""
+"Use ``@type`` annotation to specify the type of the target variable, to "
+"improve completions and other functionality."
+msgstr "利用 ``@type`` 注解来标记目标变量的类型，以增强代码提示以及其它功能"
 
 #: ../annotations/type.rst:42
-msgid "property 属性"
-msgstr ""
-
+msgid "properties"
+msgstr "property 属性"

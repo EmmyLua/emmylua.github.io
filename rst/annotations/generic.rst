@@ -1,22 +1,22 @@
 .. _ann_generic:
 
-@generic 泛型注解
--------------------
+@generic generic annotation
+---------------------------
 
 .. note::
-    利用 ``@generic`` 注解来模拟高级语言中的 ``泛型``
+    Use ``@generic`` to simulate ``generic`` in some high-level languages
 
-* 完整格式
+* Full format
 
 ::
 
 --@generic T1 [: PARENT_TYPE] [, T2 [: PARENT_TYPE]]
 
-* 应用目标：
+* Target:
 
     + function
 
-* 示例：
+* Examples:
 
     .. code-block:: lua
         :linenos:

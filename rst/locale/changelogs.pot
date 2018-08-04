@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EmmyLua for IntelliJ IDEA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 09:27+0800\n"
+"POT-Creation-Date: 2018-08-04 16:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -438,5 +438,71 @@ msgstr ""
 
 #: ../changelogs/1.2.3.rst:37
 msgid "支持中文(unicode)编程"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:2
+msgid "1.2.5 ( `28bea8a <https://github.com/tangzx/IntelliJ-EmmyLua/commit/28bea8ad3a1fa62ac49d44c5db019fdc88526c52>`__ )"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:4
+msgid "[NEW]新的Region支持，简化输入(Suggestion by @adriweb)"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:8
+#: ../changelogs/1.2.5.rst:16
+#: ../changelogs/1.2.5.rst:45
+msgid "\\"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:12
+msgid "[IMPROVE]为closure和子类重写函数提供参数智能完成"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:20
+msgid "[NEW]新增string代码完成提示功能"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:24
+msgid "[IMPROVE] 为 ``IDEA2018.2`` 新设计的 Documentation 视图(Suggestion by @dsmgit)"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:28
+msgid "[NEW]新增 ``@deprecated`` ``@author`` ``@version`` ``@since`` 注解(Suggestion by @dsmgit)"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:32
+msgid "[NEW]泛型支持 ``@generic`` 注解"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:35
+msgid ":ref:`ann_generic`"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:39
+msgid "[NEW]新增 Lua5.4 API (By @dsmgit)"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:41
+msgid "[NEW]新增Lua版本选择项，请在 ``File | Settings | Languages & Frameworks | EmmyLua`` 中设置，默认为 ``Lua5.3``。不同的level对应不同的stdlib和语法"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:49
+msgid "[IMPROVE]Attach debugger 现在可以捕获目标程序使用 ``OutputDebugString`` 的输出信息"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:51
+msgid "[NEW]同时适配 ``IDEA2017.1``, ``IDEA2017.2-IDEA2018.1``, ``IDEA2018.2``"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:53
+msgid "[IMPROVE]优化 ``Remote debugger``"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:55
+msgid "[IMPROVE]更新 ``EmmyDoc Tutorial``"
+msgstr ""
+
+#: ../changelogs/1.2.5.rst:57
+msgid "[FIX]bug fix #145 #165 #167 #169 ..."
 msgstr ""
 

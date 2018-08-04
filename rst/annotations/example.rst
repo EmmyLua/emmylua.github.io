@@ -1,37 +1,37 @@
-完整示例
--------------------
+Full examples
+-----------------------------------
 
 .. code-block:: lua
     :linenos:
 
-    ---@class Transport @父类
+    ---@class Transport @parent class
     ---@public field name string
     local transport = {}
 
     function transport:move()end
 
-    ---@class Car : Transport @Car继承自Transport
+    ---@class Car : Transport @Car extends Transport
     local car = {}
     function car:move()end
 
-    ---@class Ship : Transport @Ship继承自Transport
+    ---@class Ship : Transport @Ship extends Transport
     local ship = {}
 
-    ---@param type number @参数type说明
-    ---@return Car|Ship @返回类型可能是Car也有可能是Ship
+    ---@param type number @parameter type
+    ---@return Car|Ship @may return Car or Ship
     local function create(type)
-    -- 略
+    -- ignored
     end
 
     local obj = create(1)
-    ---此时obj可代码提示
+    ---now you can see completion for obj
 
     ---@type Car
     local obj2
-    ---此时obj2可代码提示
+    ---now you can see completion for obj2
 
     local list = { obj, obj2 }
     ---@param v Transport
     for _, v in ipairs(list) do
-    ---此时v可代码提示
+    ---not you can see completion for v
     end

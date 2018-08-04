@@ -1,18 +1,18 @@
 .. _ann_language:
 
-@language内嵌语言
--------------------
+@language language injection
+----------------------------
 
 .. note::
-    可以利用 ``@language`` 的方式来标注一段文本为某种代码格式，从而可以显示高亮
+    Use ``@language`` to inject syntax highlight to a piece of text
 
-* 完整格式：
+* Full format:
 
 ::
 
 ---@language LANGUAGE_ID
 
-* 示例：
+* Example:
 
     .. code-block:: lua
         :linenos:
@@ -22,7 +22,7 @@
         local jsonText = [[{
             "name":"Emmy"
         }]]
-        
-* 效果：
+
+* Screenshot:
 
 .. image:: /images/annotation/language_injector.png

@@ -1,21 +1,21 @@
-@param参数类型标记注解
+@param parameter type annotation
 -----------------------------------
 
 .. note::
 
-    利用 ``@param`` 注解来标记函数定义参数的类型，以增强代码提示以及其它功能
+    Use ``@param`` to specify the types of function parameters, to improve completions and other functionality.
 
     .. image:: /images/annotation/param1.gif
 
-* 完整格式：
+* Full format:
 
 ::
 
     ---@param param_name MY_TYPE[|other_type] [@comment]
 
-* 应用目标：
+* Target:
 
-    + 函数参数
+    + function parameters
 
     .. code-block:: lua
         :linenos:
@@ -35,7 +35,7 @@
             ...
         end)
 
-    + for循环参数
+    + for loop variables
 
     .. code-block:: lua
         :linenos:

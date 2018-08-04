@@ -1,18 +1,18 @@
 .. _ann_array:
 
-数组类型
--------------------
+array type
+-----------------------------------
 
 .. note::
-    可以利用 ``MY_TYPE[]`` 的方式来标注一个数据类型为数组
+    Use ``MY_TYPE[]`` to specify that a variable's type is an array type
 
-* 完整格式：
+* Full format:
 
 ::
 
 ---@type MY_TYPE[]
 
-* 示例：
+* Examples:
 
     .. code-block:: lua
         :linenos:
@@ -22,10 +22,10 @@
         local list = {}
 
         local car = list[1]
-        -- car. 可以出现代码提示
+        -- car. and you'll see completion
 
         for i, car in ipairs(list) do
-            -- car. 可以出现代码提示
+            -- car. and you'll see completion
         end
 
 .. seealso::

@@ -1,21 +1,21 @@
-@return 函数返回值注解
---------------------------------
+@return function return type annotation
+---------------------------------------
 
 .. note::
 
-    利用 ``@return`` 注解来标记函数的返回值类型
+    Use ``@return`` to specify the return type of a function
 
     .. image:: /images/annotation/return1.gif
 
-* 完整格式：
+* Full format:
 
 ::
 
     ---@return MY_TYPE[|OTHER_TYPE] [@comment]
 
-* 应用目标：
+* Target:
 
-    + 函数
+    + functions
     
     .. code-block:: lua
         :linenos:
@@ -26,7 +26,7 @@
             ...
         end
 
-        ---此时car_or_ship类型可以不用@type标记，EmmyLua已通过create函数的推断出了类型
+        ---Here car_or_ship doesn't need @type annotation, EmmyLua has already inferred the type via "create" function
         local car_or_ship = create()
     
     .. code-block:: lua
