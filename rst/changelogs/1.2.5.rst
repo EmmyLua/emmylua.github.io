@@ -1,15 +1,19 @@
-1.2.5 ( `971d001 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/971d001165305468986044654f368b326afa2ce0>`__ )
+1.2.5 ( `28bea8a <https://github.com/tangzx/IntelliJ-EmmyLua/commit/28bea8ad3a1fa62ac49d44c5db019fdc88526c52>`__ )
 ==================================================================================================================
 
 1. [NEW]新的Region支持，简化输入(Suggestion by @adriweb)
 
     .. image:: 1.2.5/region.png
 
+    \
+
     .. image:: 1.2.5/region.gif
 
 2. [IMPROVE]为closure和子类重写函数提供参数智能完成
 
     .. image:: 1.2.5/suggestion_params1.gif
+
+    \
 
     .. image:: 1.2.5/suggestion_params2.gif
 
@@ -37,6 +41,8 @@
 8. [NEW]新增Lua版本选择项，请在 ``File | Settings | Languages & Frameworks | EmmyLua`` 中设置，默认为 ``Lua5.3``。不同的level对应不同的stdlib和语法
 
     .. image:: 1.2.5/level_1.png
+
+    \
 
     .. image:: 1.2.5/level_2.png
 

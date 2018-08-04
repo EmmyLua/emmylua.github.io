@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.2.5 ( 971d001 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>1.2.5 ( 28bea8a ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -25,7 +25,8 @@
 
   
 
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -91,7 +92,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.5 ( 971d001 )</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.5 ( 28bea8a )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.3.html">1.2.3 ( a8c0fd1 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.2.html">1.2.2 ( 04985b6 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.1.html">1.2.1 ( 1816138 )</a></li>
@@ -148,7 +149,7 @@
         
           <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>1.2.5 ( 971d001 )</li>
+      <li>1.2.5 ( 28bea8a )</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -165,15 +166,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="d001">
-<h1>1.2.5 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/971d001165305468986044654f368b326afa2ce0">971d001</a> )<a class="headerlink" href="#d001" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="bea8a">
+<h1>1.2.5 ( <a class="reference external" href="https://github.com/tangzx/IntelliJ-EmmyLua/commit/28bea8ad3a1fa62ac49d44c5db019fdc88526c52">28bea8a</a> )<a class="headerlink" href="#bea8a" title="永久链接至标题">¶</a></h1>
 <ol class="arabic">
-<li><p class="first">[IMPROVE] 为 <code class="docutils literal notranslate"><span class="pre">IDEA2018.2</span></code> 新设计的 Documentation 视图</p>
+<li><p class="first">[NEW]新的Region支持，简化输入(Suggestion by &#64;adriweb)</p>
+<blockquote>
+<div><img alt="../_images/region1.png" src="../_images/region1.png" />
+<p></p>
+<img alt="../_images/region.gif" src="../_images/region.gif" />
+</div></blockquote>
+</li>
+<li><p class="first">[IMPROVE]为closure和子类重写函数提供参数智能完成</p>
+<blockquote>
+<div><img alt="../_images/suggestion_params1.gif" src="../_images/suggestion_params1.gif" />
+<p></p>
+<img alt="../_images/suggestion_params2.gif" src="../_images/suggestion_params2.gif" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW]新增string代码完成提示功能</p>
+<blockquote>
+<div><img alt="../_images/string_completion.gif" src="../_images/string_completion.gif" />
+</div></blockquote>
+</li>
+<li><p class="first">[IMPROVE] 为 <code class="docutils literal notranslate"><span class="pre">IDEA2018.2</span></code> 新设计的 Documentation 视图(Suggestion by &#64;dsmgit)</p>
 <blockquote>
 <div><img alt="../_images/redesigned_documentation.png" src="../_images/redesigned_documentation.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW]新增 <code class="docutils literal notranslate"><span class="pre">&#64;deprecated</span></code> <code class="docutils literal notranslate"><span class="pre">&#64;author</span></code> <code class="docutils literal notranslate"><span class="pre">&#64;version</span></code> <code class="docutils literal notranslate"><span class="pre">&#64;since</span></code> 注解</p>
+<li><p class="first">[NEW]新增 <code class="docutils literal notranslate"><span class="pre">&#64;deprecated</span></code> <code class="docutils literal notranslate"><span class="pre">&#64;author</span></code> <code class="docutils literal notranslate"><span class="pre">&#64;version</span></code> <code class="docutils literal notranslate"><span class="pre">&#64;since</span></code> 注解(Suggestion by &#64;dsmgit)</p>
 <blockquote>
 <div><img alt="../_images/new_tags.png" src="../_images/new_tags.png" />
 </div></blockquote>
@@ -184,14 +204,15 @@
 <p class="first admonition-title">参见</p>
 <p class="last"><a class="reference internal" href="../annotations/generic.html#ann-generic"><span class="std std-ref">&#64;generic 泛型注解</span></a></p>
 </div>
-<img alt="../_images/generic.png" src="../_images/generic.png" />
+<img alt="../_images/generic1.png" src="../_images/generic1.png" />
 </div></blockquote>
 </li>
-<li><p class="first">[NEW]新增 Lua5.4 API (感谢来自 &#64;dsmgit 的贡献)</p>
+<li><p class="first">[NEW]新增 Lua5.4 API (By &#64;dsmgit)</p>
 </li>
 <li><p class="first">[NEW]新增Lua版本选择项，请在 <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">|</span> <span class="pre">Settings</span> <span class="pre">|</span> <span class="pre">Languages</span> <span class="pre">&amp;</span> <span class="pre">Frameworks</span> <span class="pre">|</span> <span class="pre">EmmyLua</span></code> 中设置，默认为 <code class="docutils literal notranslate"><span class="pre">Lua5.3</span></code>。不同的level对应不同的stdlib和语法</p>
 <blockquote>
 <div><img alt="../_images/level_1.png" src="../_images/level_1.png" />
+<p></p>
 <img alt="../_images/level_2.png" src="../_images/level_2.png" />
 </div></blockquote>
 </li>
@@ -277,11 +298,16 @@
 
   
 
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
 
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
       });
   </script>
 <script>
