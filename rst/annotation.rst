@@ -19,6 +19,7 @@ EmmyLua use ``annotation`` to help IDE improve code completions and other featur
     annotations/param
     annotations/return
     annotations/field
+    annotations/generic
     annotations/language
     annotations/array
     annotations/dict
