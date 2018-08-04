@@ -2,14 +2,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>@language内嵌语言 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>@language language injection &mdash; EmmyLua for IntelliJ IDEA 1.0 documentation</title>
   
 
   
@@ -28,10 +28,10 @@
   
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="数组类型" href="array.html" />
-    <link rel="prev" title="@generic 泛型注解" href="generic.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="array type" href="array.html" />
+    <link rel="prev" title="@generic generic annotation" href="generic.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -86,25 +86,25 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../donate.html">捐赠/Donate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">安装</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../annotation.html">注解功能</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="class.html">&#64;class类声明注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="type.html">&#64;type类型标记注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="param.html">&#64;param参数类型标记注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="return.html">&#64;return 函数返回值注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="field.html">&#64;field 属性注解</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generic.html">&#64;generic 泛型注解</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">&#64;language内嵌语言</a></li>
-<li class="toctree-l2"><a class="reference internal" href="array.html">数组类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dict.html">字典类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fun.html">函数类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="see.html">&#64;see 引用</a></li>
-<li class="toctree-l2"><a class="reference internal" href="example.html">完整示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../annotation.html">Annotations</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="class.html">&#64;class class declaration annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="type.html">&#64;type type annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="param.html">&#64;param parameter type annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return.html">&#64;return function return type annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="field.html">&#64;field field annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generic.html">&#64;generic generic annotation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">&#64;language language injection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="array.html">array type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dict.html">table type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fun.html">function types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="see.html">&#64;see references</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html">Full examples</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../template.html">代码片段模板</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template.html">Live Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../postfix.html">Postfix Completion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../run.html">Run And Debug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelogs.html">Changelogs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
@@ -152,9 +152,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../annotation.html">注解功能</a> &raquo;</li>
+          <li><a href="../annotation.html">Annotations</a> &raquo;</li>
         
-      <li>&#64;language内嵌语言</li>
+      <li>&#64;language language injection</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -171,20 +171,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="language">
-<span id="ann-language"></span><h1>&#64;language内嵌语言<a class="headerlink" href="#language" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="language-language-injection">
+<span id="ann-language"></span><h1>&#64;language language injection<a class="headerlink" href="#language-language-injection" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
-<p class="first admonition-title">注解</p>
-<p class="last">可以利用 <code class="docutils literal notranslate"><span class="pre">&#64;language</span></code> 的方式来标注一段文本为某种代码格式，从而可以显示高亮</p>
+<p class="first admonition-title">Note</p>
+<p class="last">Use <code class="docutils literal notranslate"><span class="pre">&#64;language</span></code> to inject syntax highlight to a piece of text</p>
 </div>
 <ul class="simple">
-<li>完整格式：</li>
+<li>Full format:</li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span><span class="nd">@language</span> <span class="n">LANGUAGE_ID</span>
 </pre></div>
 </div>
 <ul>
-<li><p class="first">示例：</p>
+<li><p class="first">Example:</p>
 <blockquote>
 <div><div class="highlight-lua notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -197,7 +197,7 @@
 </td></tr></table></div>
 </div></blockquote>
 </li>
-<li><p class="first">效果：</p>
+<li><p class="first">Screenshot:</p>
 </li>
 </ul>
 <img alt="../_images/language_injector.png" src="../_images/language_injector.png" />
@@ -224,10 +224,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="array.html" class="btn btn-neutral float-right" title="数组类型" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="array.html" class="btn btn-neutral float-right" title="array type" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="generic.html" class="btn btn-neutral" title="@generic 泛型注解" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="generic.html" class="btn btn-neutral" title="@generic generic annotation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -258,7 +258,7 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'1.0',
-            LANGUAGE:'zh_CN',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false,
@@ -268,7 +268,6 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
