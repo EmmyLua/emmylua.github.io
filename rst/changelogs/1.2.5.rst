@@ -1,35 +1,51 @@
 1.2.5 ( `971d001 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/971d001165305468986044654f368b326afa2ce0>`__ )
 ==================================================================================================================
 
-1. [IMPROVE] 为 ``IDEA2018.2`` 新设计的 Documentation 视图
+1. [NEW]新的Region支持，简化输入(Suggestion by @adriweb)
+
+    .. image:: 1.2.5/region.png
+
+    .. image:: 1.2.5/region.gif
+
+2. [IMPROVE]为closure和子类重写函数提供参数智能完成
+
+    .. image:: 1.2.5/suggestion_params1.gif
+
+    .. image:: 1.2.5/suggestion_params2.gif
+
+3. [NEW]新增string代码完成提示功能
+
+    .. image:: 1.2.5/string_completion.gif
+
+4. [IMPROVE] 为 ``IDEA2018.2`` 新设计的 Documentation 视图(Suggestion by @dsmgit)
 
     .. image:: 1.2.5/redesigned_documentation.png
 
-2. [NEW]新增 ``@deprecated`` ``@author`` ``@version`` ``@since`` 注解
+5. [NEW]新增 ``@deprecated`` ``@author`` ``@version`` ``@since`` 注解(Suggestion by @dsmgit)
 
     .. image:: 1.2.5/new_tags.png
 
-3. [NEW]泛型支持 ``@generic`` 注解
+6. [NEW]泛型支持 ``@generic`` 注解
 
     .. seealso::
         :ref:`ann_generic`
 
     .. image:: 1.2.5/generic.png
 
-4. [NEW]新增 Lua5.4 API (感谢来自 @dsmgit 的贡献)
+7. [NEW]新增 Lua5.4 API (By @dsmgit)
 
-5. [NEW]新增Lua版本选择项，请在 ``File | Settings | Languages & Frameworks | EmmyLua`` 中设置，默认为 ``Lua5.3``。不同的level对应不同的stdlib和语法
+8. [NEW]新增Lua版本选择项，请在 ``File | Settings | Languages & Frameworks | EmmyLua`` 中设置，默认为 ``Lua5.3``。不同的level对应不同的stdlib和语法
 
     .. image:: 1.2.5/level_1.png
 
     .. image:: 1.2.5/level_2.png
 
-6. [IMPROVE]Attach debugger 现在可以捕获目标程序使用 ``OutputDebugString`` 的输出信息
+9. [IMPROVE]Attach debugger 现在可以捕获目标程序使用 ``OutputDebugString`` 的输出信息
 
-7. [NEW]同时适配 ``IDEA2017.1``, ``IDEA2017.2-IDEA2018.1``, ``IDEA2018.2``
+10. [NEW]同时适配 ``IDEA2017.1``, ``IDEA2017.2-IDEA2018.1``, ``IDEA2018.2``
 
-8. [IMPROVE]优化 ``Remote debugger``
+11. [IMPROVE]优化 ``Remote debugger``
 
-9. [IMPROVE]更新 ``EmmyDoc Tutorial``
+12. [IMPROVE]更新 ``EmmyDoc Tutorial``
 
-10. [FIX]bug fix #145 #165 #167 #169 ...
+13. [FIX]bug fix #145 #165 #167 #169 ...
