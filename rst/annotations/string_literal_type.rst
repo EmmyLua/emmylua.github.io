@@ -21,8 +21,11 @@
 
     .. image:: /images/annotation/string_literal_types_1.png
 
-       
+    |
+
     .. image:: /images/annotation/string_literal_types_2.png
+
+    |
 
     .. note::
 
