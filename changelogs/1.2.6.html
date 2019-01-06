@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.2.1 ( 1816138 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 documentation</title>
+  <title>1.2.6 ( 2d0f203 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.2.0 ( 59f09a9 )" href="1.2.0.html" />
-    <link rel="prev" title="1.2.2 ( 04985b6 )" href="1.2.2.html" /> 
+    <link rel="next" title="1.2.5 ( 28bea8a )" href="1.2.5.html" />
+    <link rel="prev" title="Changelogs" href="../changelogs.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -91,11 +91,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../postfix.html">Postfix Completion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../run.html">Run And Debug</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.2.6.html">1.2.6 ( 2d0f203 )</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.6 ( 2d0f203 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.5.html">1.2.5 ( 28bea8a )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.3.html">1.2.3 ( a8c0fd1 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.2.html">1.2.2 ( 04985b6 )</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.1 ( 1816138 )</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.1.html">1.2.1 ( 1816138 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.0.html">1.2.0 ( 59f09a9 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.1.9.html">1.1.9 ( 5aed300 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.1.8.html">1.1.8  ( 482c87a )</a></li>
@@ -149,7 +149,7 @@
         
           <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>1.2.1 ( 1816138 )</li>
+      <li>1.2.6 ( 2d0f203 )</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -166,45 +166,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>1.2.1 ( <a class="reference external" href="https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/1816138aa9d7c25a9731fd153ff43ace6719dced">1816138</a> )<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic">
-<li><p class="first">[IMPROVE] 大幅改进 Attach Debugger，显著减少崩溃机率并提升调试性能</p>
-</li>
-<li><p class="first">[Experimental] 在 <code class="docutils literal notranslate"><span class="pre">Attach</span> <span class="pre">Debugger</span></code> 基础上增加 <code class="docutils literal notranslate"><span class="pre">Lua</span> <span class="pre">Profiler</span></code> 功能，用来查看性能相关数据</p>
-<blockquote>
-<div><img alt="../_images/profiler.png" src="../_images/profiler.png" />
-<p>同时支持用代码来开启与关闭 profiler</p>
-<img alt="../_images/profiler_api.png" src="../_images/profiler_api.png" />
-</div></blockquote>
-</li>
-<li><p class="first">[Experimental] 在 <code class="docutils literal notranslate"><span class="pre">Attach</span> <span class="pre">Debugger</span></code> 基础上增加 <code class="docutils literal notranslate"><span class="pre">Memory</span> <span class="pre">Files</span></code> 功能，即使没有源代码也可以调试程序（从被调试程序内存中提取）</p>
-<blockquote>
-<div><img alt="../_images/mem_file.png" src="../_images/mem_file.png" />
-</div></blockquote>
-</li>
-<li><p class="first">[NEW] 为附加列表提供App图标显示</p>
-<blockquote>
-<div><img alt="../_images/process_icon.png" src="../_images/process_icon.png" />
-</div></blockquote>
-</li>
-<li><p class="first">[IMPROVE] 改进格式化功能，提供对齐、换行等功能，详细请打 <code class="docutils literal notranslate"><span class="pre">Settings-&gt;Editor-&gt;Code</span> <span class="pre">Style-&gt;Lua</span></code> 预览</p>
-</li>
-<li><p class="first">[IMPROVE] 当光标放在一元(unary)算符( <code class="docutils literal notranslate"><span class="pre">#</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code> , <code class="docutils literal notranslate"><span class="pre">~</span></code> …)、二元(binary)运行符( <code class="docutils literal notranslate"><span class="pre">and</span></code> , <code class="docutils literal notranslate"><span class="pre">or</span></code> , <code class="docutils literal notranslate"><span class="pre">+</span></code> , <code class="docutils literal notranslate"><span class="pre">-</span></code> …)上时高亮一元或二元运算表达式的范围</p>
-<blockquote>
-<div><img alt="../_images/unary_binary_highlight.png" src="../_images/unary_binary_highlight.png" />
-</div></blockquote>
-</li>
-<li><p class="first">[NEW] 支持使用 .net dll 文件作为lua lib，增加代码提示</p>
-<blockquote>
-<div><img alt="../_images/dll.png" src="../_images/dll.png" />
-</div></blockquote>
-</li>
-<li><p class="first">[NEW] 常量可计算提示</p>
-<blockquote>
-<div><img alt="../_images/calc_expr.gif" src="../_images/calc_expr.gif" />
-</div></blockquote>
-</li>
+  <div class="section" id="d0f203">
+<h1>1.2.6 ( <a class="reference external" href="https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/2d0f2032a60c95059a26e4c0381b8d6b2c8556aa">2d0f203</a> )<a class="headerlink" href="#d0f203" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li>[NEW]Code completion for breakpoint condition</li>
+<li>[NEW]Compatible with IDEA2018.3</li>
+<li>[NEW]New inspection “Unresolved symbol in emmy doc”</li>
+<li>[NEW]New inspection “Unresolved class”</li>
+<li>[NEW]Shebang file type detector</li>
+<li>[NEW]String literal paste provider</li>
+<li>[NEW]New annotator: &#64;vararg TYPE</li>
+</ol>
+<ol class="arabic simple" start="9">
+<li>[NEW]Arguments history completion</li>
+<li>[NEW]Unity attach debugger support (By &#64;jb574)</li>
+<li>Bug fix #178 #168 #186 #192 #196 #198 #199 #195 #116 …</li>
 </ol>
 </div>
 
@@ -216,7 +192,7 @@
 <a href="https://github.com/tangzx/IntelliJ-EmmyLua"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <script>
     var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
-    var idcomments_post_id = 'changelogs/1.2.1';
+    var idcomments_post_id = 'changelogs/1.2.6';
     var idcomments_post_url;
 </script>
 <span id="IDCommentsPostTitle" style="display:none"></span>
@@ -229,10 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="1.2.0.html" class="btn btn-neutral float-right" title="1.2.0 ( 59f09a9 )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="1.2.5.html" class="btn btn-neutral float-right" title="1.2.5 ( 28bea8a )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="1.2.2.html" class="btn btn-neutral" title="1.2.2 ( 04985b6 )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../changelogs.html" class="btn btn-neutral" title="Changelogs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

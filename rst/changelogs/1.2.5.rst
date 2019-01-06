@@ -1,5 +1,5 @@
-1.2.5 ( `28bea8a <https://github.com/tangzx/IntelliJ-EmmyLua/commit/28bea8ad3a1fa62ac49d44c5db019fdc88526c52>`__ )
-==================================================================================================================
+1.2.5 ( `28bea8a <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/28bea8ad3a1fa62ac49d44c5db019fdc88526c52>`__ )
+===================================================================================================================
 
 1. [NEW]新的Region支持，简化输入(Suggestion by @adriweb)
 

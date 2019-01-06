@@ -1,0 +1,22 @@
+1.2.6 ( `2d0f203 <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/2d0f2032a60c95059a26e4c0381b8d6b2c8556aa>`__ )
+===================================================================================================================
+
+1. [NEW]Code completion for breakpoint condition
+
+2. [NEW]Compatible with IDEA2018.3
+
+3. [NEW]New inspection "Unresolved symbol in emmy doc"
+
+4. [NEW]New inspection "Unresolved class"
+
+5. [NEW]Shebang file type detector
+
+6. [NEW]String literal paste provider
+
+7. [NEW]New annotator: @vararg TYPE
+
+9. [NEW]Arguments history completion
+
+10. [NEW]Unity attach debugger support (By @jb574)
+
+11. Bug fix #178 #168 #186 #192 #196 #198 #199 #195 #116 ...

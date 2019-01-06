@@ -1,8 +1,8 @@
-1.2.0 ( `59f09a9 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/59f09a9b17f1cd7e64f84859ca2b112cd0dbd0c6>`__ )
-==================================================================================================================
+1.2.0 ( `59f09a9 <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/59f09a9b17f1cd7e64f84859ca2b112cd0dbd0c6>`__ )
+===================================================================================================================
 
-1.2.0b2 ( `59f09a9 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/59f09a9b17f1cd7e64f84859ca2b112cd0dbd0c6>`__ ) 
---------------------------------------------------------------------------------------------------------------------
+1.2.0b2 ( `59f09a9 <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/59f09a9b17f1cd7e64f84859ca2b112cd0dbd0c6>`__ ) 
+---------------------------------------------------------------------------------------------------------------------
 
 1. [CHANGE] ``nil/true/false`` 在 ``Default`` 的默认颜色改变
 
@@ -25,12 +25,12 @@
 7. [IMPROVE] lua解析性能优化
 
 8. [IMPROVE] 完善快速文档
-9. [FIX] 修复 `issue 63 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/63>`__
-10. [FIX] 修复 `issue 66 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/66>`__
-11. [FIX] 修复 `issue 69 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/69>`__
+9. [FIX] 修复 `issue 63 <https://github.com/EmmyLua/IntelliJ-EmmyLua/issues/63>`__
+10. [FIX] 修复 `issue 66 <https://github.com/EmmyLua/IntelliJ-EmmyLua/issues/66>`__
+11. [FIX] 修复 `issue 69 <https://github.com/EmmyLua/IntelliJ-EmmyLua/issues/69>`__
 
-1.2.0b1 ( `0be9824 <https://github.com/tangzx/IntelliJ-EmmyLua/commit/0be98244185a27875b9721df1d00cede8893c217>`__ )
---------------------------------------------------------------------------------------------------------------------
+1.2.0b1 ( `0be9824 <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/0be98244185a27875b9721df1d00cede8893c217>`__ )
+---------------------------------------------------------------------------------------------------------------------
 
 1. [NEW] 面包屑（Breadcrumbs info）功能
 
@@ -59,7 +59,7 @@
 
     .. image:: 1.2.0/rename-fix.gif
 
-9. [FIX] 修复 `issue 54 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/54>`__
-10. [FIX] 修复 `issue 55 <https://github.com/tangzx/IntelliJ-EmmyLua/issues/55>`__ 注解类型可用 ``()`` 包围
+9. [FIX] 修复 `issue 54 <https://github.com/EmmyLua/IntelliJ-EmmyLua/issues/54>`__
+10. [FIX] 修复 `issue 55 <https://github.com/EmmyLua/IntelliJ-EmmyLua/issues/55>`__ 注解类型可用 ``()`` 包围
 
     .. image:: 1.2.0/ty-par.png
