@@ -14,6 +14,7 @@ EmmyLua use ``annotation`` to help IDE improve code completions and other functi
 .. toctree::
     annotations/class
     annotations/type
+    annotations/alias
     annotations/param
     annotations/return
     annotations/field
