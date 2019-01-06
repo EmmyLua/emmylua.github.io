@@ -23,5 +23,6 @@ EmmyLua use ``annotation`` to help IDE improve code completions and other functi
     annotations/array
     annotations/dict
     annotations/fun
+    annotations/string_literal_type
     annotations/see
     annotations/example

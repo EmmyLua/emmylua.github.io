@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>@see 引用 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
+  <title>字面量类型 &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="完整示例" href="example.html" />
-    <link rel="prev" title="字面量类型" href="string_literal_type.html" /> 
+    <link rel="next" title="@see 引用" href="see.html" />
+    <link rel="prev" title="函数类型" href="fun.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -98,8 +98,8 @@
 <li class="toctree-l2"><a class="reference internal" href="array.html">数组类型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dict.html">字典类型</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fun.html">函数类型</a></li>
-<li class="toctree-l2"><a class="reference internal" href="string_literal_type.html">字面量类型</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">&#64;see 引用</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">字面量类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="see.html">&#64;see 引用</a></li>
 <li class="toctree-l2"><a class="reference internal" href="example.html">完整示例</a></li>
 </ul>
 </li>
@@ -155,7 +155,7 @@
         
           <li><a href="../annotation.html">注解功能</a> &raquo;</li>
         
-      <li>&#64;see 引用</li>
+      <li>字面量类型</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,13 +172,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="see-references">
-<span id="ann-see"></span><h1>&#64;see 引用<a class="headerlink" href="#see-references" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="ann-string-literal-type">
+<span id="id1"></span><h1>字面量类型<a class="headerlink" href="#ann-string-literal-type" title="永久链接至标题">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
-<p>可以利用 <code class="docutils literal notranslate"><span class="pre">see</span></code> 的注解来标注一个引用</p>
-<img alt="../_images/see.png" class="last" src="../_images/see.png" />
+<p class="last">字面量类型（String literal types）允许你指定字符串作为固定的代码提示，结合 <code class="docutils literal notranslate"><span class="pre">&#64;alias</span></code> 特性可以起到类似“枚举”的效果</p>
 </div>
+<ul>
+<li><p class="first">示例</p>
+<blockquote>
+<div><div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">---@alias Handler fun(type: string, data: any):void</span>
+
+<span class="c1">---@param event string | &quot;&#39;onClosed&#39;&quot; | &quot;&#39;onData&#39;&quot;</span>
+<span class="c1">---@param handler Handler | &quot;function(type, data) print(data) end&quot;</span>
+<span class="kr">function</span> <span class="nf">addEventListener</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">handler</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</div>
+<img alt="../_images/string_literal_types_1.png" src="../_images/string_literal_types_1.png" />
+<img alt="../_images/string_literal_types_2.png" src="../_images/string_literal_types_2.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">建议使用 <code class="docutils literal notranslate"><span class="pre">&#64;alias</span></code> 简化类型复杂度</p>
+</div>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">---@alias Handler fun(type: string, data: any):void</span>
+
+<span class="c1">---@alias IOEventEnum string | &quot;&#39;onClosed&#39;&quot; | &quot;&#39;onData&#39;&quot;</span>
+
+<span class="c1">---@param event IOEventEnum</span>
+<span class="c1">---@param handler Handler | &quot;function(type, data) print(data) end&quot;</span>
+<span class="kr">function</span> <span class="nf">addEventListener</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">handler</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+</div>
+<img alt="../_images/string_literal_types_3.png" src="../_images/string_literal_types_3.png" />
+</div></blockquote>
+</li>
+</ul>
 </div>
 
 
@@ -189,7 +219,7 @@
 <a href="https://github.com/tangzx/IntelliJ-EmmyLua"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <script>
     var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
-    var idcomments_post_id = 'annotations/see';
+    var idcomments_post_id = 'annotations/string_literal_type';
     var idcomments_post_url;
 </script>
 <span id="IDCommentsPostTitle" style="display:none"></span>
@@ -202,10 +232,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="example.html" class="btn btn-neutral float-right" title="完整示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="see.html" class="btn btn-neutral float-right" title="@see 引用" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="string_literal_type.html" class="btn btn-neutral" title="字面量类型" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="fun.html" class="btn btn-neutral" title="函数类型" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
