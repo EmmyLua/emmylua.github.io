@@ -94,6 +94,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#emmyluaidea-pycharm-phpstorm"><strong>问</strong>：EmmyLua可以安装在IDEA其它的产品上吗？如PyCharm, PhpStorm…</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#emmylua"><strong>问</strong>：安装EmmyLua失败，出现这个怎么解决？</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id1"><strong>问</strong>：附加调试不稳定，经常崩溃怎么办？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-emmy-backend-dll-could-not-be-loaded-into-the-process"><strong>问</strong>：附加调试出现 <code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">emmy.backend.dll</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">loaded</span> <span class="pre">into</span> <span class="pre">the</span> <span class="pre">process</span></code> 怎么办？</a></li>
 </ul>
 </li>
 </ul>
@@ -181,6 +182,17 @@
 <p class="first admonition-title">Note</p>
 <p>的确，目前Attach Debug方式不太稳定，经常收到崩溃的反馈。</p>
 <p class="last"><code class="docutils literal notranslate"><span class="pre">Attach</span> <span class="pre">Debug</span></code> 是基于 <code class="docutils literal notranslate"><span class="pre">Decoda</span></code> 的用C/C++写成的调试内核，出了问题比较难查，关键是我这里没有重现的环境（我自己调试Unity项目一切正常…），再加上个人时间与精力有限，所以这块的BUG修复进展不理想，如果经常崩溃建议大家还是暂时转用 <code class="docutils literal notranslate"><span class="pre">Remote</span> <span class="pre">debug</span></code> 方式来调试。</p>
+</div>
+</div>
+<div class="section" id="error-emmy-backend-dll-could-not-be-loaded-into-the-process">
+<h2><strong>问</strong>：附加调试出现 <code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">emmy.backend.dll</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">loaded</span> <span class="pre">into</span> <span class="pre">the</span> <span class="pre">process</span></code> 怎么办？<a class="headerlink" href="#error-emmy-backend-dll-could-not-be-loaded-into-the-process" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ol class="last arabic simple">
+<li>插件损坏：插件安装不正确，请尝试重装</li>
+<li>插件损坏：可能调试器被杀毒软件误杀</li>
+<li>权限问题：被调试的目标程序是以管理员方式启动的，而IDEA不是，请尝试以管理员权限启动IDEA</li>
+</ol>
 </div>
 </div>
 </div>
