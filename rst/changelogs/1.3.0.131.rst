@@ -11,7 +11,7 @@
 
     .. image:: 1.3.0.131/line_breaks.png
 
-4. [NEW] custom import names
+4. [NEW] settings for require-like function (by @Beenlong)
 
     .. image:: 1.3.0.131/import_names1.png
 
