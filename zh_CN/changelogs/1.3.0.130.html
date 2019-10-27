@@ -2,14 +2,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.2.6 ( 2d0f203 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 documentation</title>
+  <title>1.3.0.130 ( dd7bd14 ) &mdash; EmmyLua for IntelliJ IDEA 1.0 文档</title>
   
 
   
@@ -27,10 +27,10 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.2.5 ( 28bea8a )" href="1.2.5.html" />
-    <link rel="prev" title="1.3.0.131 ( 74d3d2f )" href="1.3.0.131.html" /> 
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="1.2.6 ( 2d0f203 )" href="1.2.6.html" />
+    <link rel="prev" title="Changelogs" href="../changelogs.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -84,15 +84,15 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../donate.html">Donate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../annotation.html">Annotations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../template.html">Live Templates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../postfix.html">Postfix Completion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../run.html">Run And Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../donate.html">捐赠</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../annotation.html">注解功能</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../template.html">代码片段模板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../postfix.html">后缀代码完成模板</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../run.html">运行与调试</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../changelogs.html">Changelogs</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.3.0.131.html">1.3.0.131 ( 74d3d2f )</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2.6 ( 2d0f203 )</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3.0.130 ( dd7bd14 )</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.2.6.html">1.2.6 ( 2d0f203 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.5.html">1.2.5 ( 28bea8a )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.3.html">1.2.3 ( a8c0fd1 )</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.2.2.html">1.2.2 ( 04985b6 )</a></li>
@@ -150,7 +150,7 @@
         
           <li><a href="../changelogs.html">Changelogs</a> &raquo;</li>
         
-      <li>1.2.6 ( 2d0f203 )</li>
+      <li>1.3.0.130 ( dd7bd14 )</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -167,21 +167,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="d0f203">
-<h1>1.2.6 ( <a class="reference external" href="https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/2d0f2032a60c95059a26e4c0381b8d6b2c8556aa">2d0f203</a> )<a class="headerlink" href="#d0f203" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic simple">
-<li>[NEW]Code completion for breakpoint condition</li>
-<li>[NEW]Compatible with IDEA2018.3</li>
-<li>[NEW]New inspection “Unresolved symbol in emmy doc”</li>
-<li>[NEW]New inspection “Unresolved class”</li>
-<li>[NEW]Shebang file type detector</li>
-<li>[NEW]String literal paste provider</li>
-<li>[NEW]New annotator: &#64;vararg TYPE</li>
-</ol>
-<ol class="arabic simple" start="9">
-<li>[NEW]Arguments history completion</li>
-<li>[NEW]Unity attach debugger support (By &#64;jb574)</li>
-<li>Bug fix #178 #168 #186 #192 #196 #198 #199 #195 #116 …</li>
+  <div class="section" id="dd7bd14">
+<h1>1.3.0.130 ( <a class="reference external" href="https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/dd7bd14b0129a81d91e2dda44f8a4cfe2a4a72ee">dd7bd14</a> )<a class="headerlink" href="#dd7bd14" title="永久链接至标题">¶</a></h1>
+<ol class="arabic">
+<li><p class="first">[NEW] support LuaJIT number (fix bug #272)</p>
+<blockquote>
+<div><img alt="../_images/jit_number.png" src="../_images/jit_number.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] compatible with IDEA193</p>
+</li>
+<li><p class="first">[NEW] support line breaks in comments</p>
+<blockquote>
+<div><img alt="../_images/line_breaks.png" src="../_images/line_breaks.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] custom import names</p>
+<blockquote>
+<div><img alt="../_images/import_names1.png" src="../_images/import_names1.png" />
+<p></p>
+<img alt="../_images/import_names2.png" src="../_images/import_names2.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[NEW] add special type: <code class="docutils literal notranslate"><span class="pre">self</span></code>. (like <code class="docutils literal notranslate"><span class="pre">this</span></code> in typescript)</p>
+<blockquote>
+<div><img alt="../_images/self_type.png" src="../_images/self_type.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[IMPROVE] table field completion (fix bug #230)</p>
+<blockquote>
+<div><img alt="../_images/table_field_completion.png" src="../_images/table_field_completion.png" />
+</div></blockquote>
+</li>
+<li><p class="first">[IMPROVE] improve emmy debugger and attach debugger</p>
+</li>
+<li><p class="first">[FIX] bug fix #273, #276, #278, #288</p>
+</li>
 </ol>
 </div>
 
@@ -193,7 +214,7 @@
 <a href="https://github.com/tangzx/IntelliJ-EmmyLua"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 <script>
     var idcomments_acct = 'b9a955b569ded5e921e4c18fb4c0536d';
-    var idcomments_post_id = 'changelogs/1.2.6';
+    var idcomments_post_id = 'changelogs/1.3.0.130';
     var idcomments_post_url;
 </script>
 <span id="IDCommentsPostTitle" style="display:none"></span>
@@ -206,10 +227,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="1.2.5.html" class="btn btn-neutral float-right" title="1.2.5 ( 28bea8a )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="1.2.6.html" class="btn btn-neutral float-right" title="1.2.6 ( 2d0f203 )" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="1.3.0.131.html" class="btn btn-neutral" title="1.3.0.131 ( 74d3d2f )" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../changelogs.html" class="btn btn-neutral" title="Changelogs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -240,7 +261,7 @@
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'1.0',
-            LANGUAGE:'en',
+            LANGUAGE:'zh_CN',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  false,
@@ -250,6 +271,7 @@
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
 
   
 
