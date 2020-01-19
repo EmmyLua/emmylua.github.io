@@ -1,30 +1,30 @@
-1.3.0.131 ( `74d3d2f <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/74d3d2f4f54ad5e0e20db5379bc2c587d8323c18>`__ )
+1.3.1 ( `74d3d2f <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/74d3d2f4f54ad5e0e20db5379bc2c587d8323c18>`__ )
 =======================================================================================================================
 
 1. [NEW] support LuaJIT number (fix bug #272)
 
-    .. image:: 1.3.0.131/jit_number.png
+    .. image:: 1.3.1/jit_number.png
 
 2. [NEW] compatible with IDEA193
 
 3. [NEW] support line breaks in comments
 
-    .. image:: 1.3.0.131/line_breaks.png
+    .. image:: 1.3.1/line_breaks.png
 
 4. [NEW] settings for require-like function (by @Beenlong)
 
-    .. image:: 1.3.0.131/import_names1.png
+    .. image:: 1.3.1/import_names1.png
 
     \
 
-    .. image:: 1.3.0.131/import_names2.png
+    .. image:: 1.3.1/import_names2.png
 5. [NEW] add special type: ``self``. (like ``this`` in typescript)
 
-    .. image:: 1.3.0.131/self_type.png
+    .. image:: 1.3.1/self_type.png
 
 6. [IMPROVE] table field completion (fix bug #230)
 
-    .. image:: 1.3.0.131/table_field_completion.png
+    .. image:: 1.3.1/table_field_completion.png
 
 7. [IMPROVE] improve emmy debugger and attach debugger
 
