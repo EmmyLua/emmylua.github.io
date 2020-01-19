@@ -1,0 +1,5 @@
+1.3.2 ( `de2bf54 <https://github.com/EmmyLua/IntelliJ-EmmyLua/commit/de2bf54f1ee8637e11a88db9fa0ef2a91cfcbf65>`__ )
+=======================================================================================================================
+
+1. [Remove] Remove attach debugger. Since it blocked by some anti-virus software :-(
+    EmmyLua providers attach debugger feature, which should inject .dll file into target application process. but it is getting blocked by the anti-virus software, I once explained https://github.com/EmmyLua/IntelliJ-EmmyLua/issues/263, I had to remove this feature.

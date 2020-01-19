@@ -1,3 +1,4 @@
 {
-    "restructuredtext.confPath": "${workspaceFolder}\\rst"
+    "restructuredtext.confPath": "${workspaceFolder}\\rst",
+    "restructuredtext.linter.disabled": true
 }
