@@ -1,18 +1,18 @@
 .. _ann_dict:
 
-table type
+Table type annotation
 -----------------------------------
 
 .. note::
     Use ``table<KEY_TYPE, VALUE_TYPE>`` to specify that a variable's type is a table(a.k.a. dictionary, map) type
 
-* Full format:
+* Full format
 
 ::
 
 ---@type table<KEY_TYPE, VALUE_TYPE>
 
-* Examples:
+* Examples
 
     .. code-block:: lua
         :linenos:

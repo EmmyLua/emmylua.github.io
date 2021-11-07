@@ -1,17 +1,17 @@
-@field field annotation
+@field Field annotation
 -----------------------
 
 .. note::
 
     Use ``@field`` to add extra fields to an existing class (even it doesn't appear in your code)
 
-* Full format:
+* Full format
 
 ::
 
     ---@field [public|protected|private] field_name FIELD_TYPE[|OTHER_TYPE] [@comment]
 
-* Target:
+* Target
 
     + After ``@class`` annotations
 

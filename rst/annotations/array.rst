@@ -1,18 +1,18 @@
 .. _ann_array:
 
-array type
+Array type annotation
 -----------------------------------
 
 .. note::
     Use ``MY_TYPE[]`` to specify that a variable's type is an array type
 
-* Full format:
+* Full format
 
 ::
 
 ---@type MY_TYPE[]
 
-* Examples:
+* Examples
 
     .. code-block:: lua
         :linenos:
@@ -22,10 +22,10 @@ array type
         local list = {}
 
         local car = list[1]
-        -- car. and you'll see completion
+        -- start typing car. and you'll see the completion
 
         for i, car in ipairs(list) do
-            -- car. and you'll see completion
+            -- start typing car. and you'll see the completion
         end
 
 .. seealso::

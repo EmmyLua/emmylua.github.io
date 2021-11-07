@@ -1,4 +1,4 @@
-@return function return type annotation
+@return Function return type annotation
 ---------------------------------------
 
 .. note::
@@ -7,13 +7,13 @@
 
     .. image:: /images/annotation/return1.gif
 
-* Full format:
+* Full format
 
 ::
 
     ---@return MY_TYPE[|OTHER_TYPE] [@comment]
 
-* Target:
+* Target
 
     + functions
     

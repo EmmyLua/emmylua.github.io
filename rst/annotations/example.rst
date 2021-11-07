@@ -1,4 +1,4 @@
-Full examples
+More examples
 -----------------------------------
 
 .. code-block:: lua

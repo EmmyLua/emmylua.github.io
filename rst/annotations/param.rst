@@ -1,4 +1,4 @@
-@param parameter type annotation
+@param Parameter type annotation
 -----------------------------------
 
 .. note::
@@ -7,13 +7,13 @@
 
     .. image:: /images/annotation/param1.gif
 
-* Full format:
+* Full format
 
 ::
 
     ---@param param_name MY_TYPE[|other_type] [@comment]
 
-* Target:
+* Target
 
     + function parameters
 

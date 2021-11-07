@@ -1,6 +1,6 @@
 .. _ann_type:
 
-@type type annotation
+@type Type annotation
 -----------------------------------
 
 .. note::
@@ -8,14 +8,14 @@
 
     .. image:: /images/annotation/type1.gif
 
-* Full format:
+* Full format
 
 ::
 
   ---@type MY_TYPE[|OTHER_TYPE] [@comment]
 
 
-* Target:
+* Target
 
     + local variables
 
