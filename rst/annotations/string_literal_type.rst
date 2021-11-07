@@ -1,14 +1,15 @@
 .. _ann_string_literal_type:
 
-字面量类型
------------------------
+String literal type annotation
+------------------------------
 
 .. note::
 
-    字面量类型（String literal types）允许你指定字符串作为固定的代码提示，结合 ``@alias`` 特性可以起到类似“枚举”的效果
+    Use String literal type to specify a fixed string.
+    Combined with the ``@alias`` this can be used simulate "enumeration" 
 
 
-* 示例
+* Example
 
     .. code-block:: lua
 
@@ -29,7 +30,7 @@
 
     .. note::
 
-        建议使用 ``@alias`` 简化类型复杂度
+        It is recommended to use ``@alias`` to simplify type complexity
 
     .. code-block:: lua
 

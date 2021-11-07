@@ -1,6 +1,6 @@
 .. _ann_see:
 
-@see references
+@see References
 -----------------------------------
 
 .. note::

@@ -1,19 +1,19 @@
 .. _ann_alias:
 
-@alias 别名注解
+@alias Alias annotation
 -----------------------
 
 .. note::
 
-    可以使用 ``@alias`` 将一些复杂不容易输入的类型注册为一个新的别名
+    Use ``@alias`` to register complex types with a new name
 
-* 完整格式:
+* Full format
 
 ::
 
     ---@alias NEW_NAME TYPE
 
-* 示例
+* Example
 
     .. code-block:: lua
 

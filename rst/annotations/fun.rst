@@ -1,6 +1,6 @@
 .. _ann_fun:
 
-function types
+Function type annotation
 -----------------------------------
 
 .. note::
@@ -12,7 +12,7 @@ function types
 
 ---@type fun(param:MY_TYPE):RETURN_TYPE
 
-* Examples:
+* Examples
 
     .. code-block:: lua
         :linenos:

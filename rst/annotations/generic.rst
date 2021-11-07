@@ -1,6 +1,6 @@
 .. _ann_generic:
 
-@generic generic annotation
+@generic Generic annotation
 ---------------------------
 
 .. note::
@@ -12,11 +12,11 @@
 
 --@generic T1 [: PARENT_TYPE] [, T2 [: PARENT_TYPE]]
 
-* Target:
+* Target
 
     + function
 
-* Examples:
+* Examples
 
     .. code-block:: lua
         :linenos:

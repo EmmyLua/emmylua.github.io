@@ -1,6 +1,6 @@
 .. _ann_class:
 
-@class class declaration annotation
+@class Class declaration annotation
 -----------------------------------
 
 .. note::
@@ -8,18 +8,18 @@
 
     .. image:: /images/annotation/class1.png
 
-* Full format:
+* Full format
 
 ::
 
 --@class MY_TYPE[:PARENT_TYPE] [@comment]
 
-* Target:
+* Target
 
     + local variables
     + global variables
 
-* Examples:
+* Examples
 
     .. code-block:: lua
         :linenos:
@@ -31,7 +31,7 @@
         function cls:test()
         end
 
-* Descriptions:
+* Descriptions
 
     Sepcifies variable ``cls`` is class ``Car``, so we can use ``@type`` to specify other variables' types as Car, which can improve completion and other functionality.
 

@@ -1,18 +1,18 @@
 .. _ann_language:
 
-@language language injection
+@language Language injection
 ----------------------------
 
 .. note::
     Use ``@language`` to inject syntax highlight to a piece of text
 
-* Full format:
+* Full format
 
 ::
 
 ---@language LANGUAGE_ID
 
-* Example:
+* Example
 
     .. code-block:: lua
         :linenos:
@@ -23,6 +23,6 @@
             "name":"Emmy"
         }]]
 
-* Screenshot:
+* Screenshot
 
 .. image:: /images/annotation/language_injector.png
